@@ -22,9 +22,18 @@ export default function ProductCard({ product }: { product: Product }) {
         className="group bg-linen overflow-hidden"
       >
         <div className="aspect-square bg-sage/20 relative overflow-hidden">
-          <div className="absolute inset-0 flex items-center justify-center text-olive/30 font-serif text-lg">
-            {product.category}
-          </div>
+          {product.image ? (
+            /* eslint-disable-next-line @next/next/no-img-element */
+            <img
+              src={product.image}
+              alt={product.name}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+            />
+          ) : (
+            <div className="absolute inset-0 flex items-center justify-center text-olive/30 font-serif text-lg">
+              {product.category}
+            </div>
+          )}
         </div>
         <div className="p-6">
           <h3 className="font-serif text-xl text-ink group-hover:text-olive transition-colors">

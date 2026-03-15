@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Container from '@/components/ui/Container';
 import Button from '@/components/ui/Button';
 import ScrollReveal from '@/components/animation/ScrollReveal';
@@ -5,12 +6,18 @@ import HeroTimeline from '@/components/animation/HeroTimeline';
 import TextReveal from '@/components/animation/TextReveal';
 import ParallaxLayer from '@/components/animation/ParallaxLayer';
 
+const featuredProducts = [
+  { name: 'Single Origin', price: '$22.00', image: '/images/generated/atmosphere_pourover.png' },
+  { name: 'House Blend', price: '$18.00', image: '/images/generated/product_coffee_bags.png' },
+  { name: 'Seasonal Roast', price: '$20.00', image: '/images/generated/hero_beans_pour.png' },
+];
+
 export default function Home() {
   return (
     <>
-      {/* Hero Section — Split layout: text left, visual right */}
+      {/* Hero Section — Split layout: text left, hero image right */}
       <section className="bg-linen -mt-16 md:-mt-20">
-        <HeroTimeline />
+        <HeroTimeline heroImage="/images/generated/hero_latte.png" />
       </section>
 
       {/* Featured Section */}
@@ -30,13 +37,22 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {['Single Origin', 'House Blend', 'Seasonal Roast'].map((name, i) => (
-              <ScrollReveal key={name} delay={i * 0.15}>
-                <div className="group bg-linen p-8 text-center hover:bg-sage/20 transition-colors duration-300">
-                  <div className="w-full aspect-square bg-sage/20 mb-6" />
-                  <h3 className="font-serif text-2xl text-ink mb-2">{name}</h3>
-                  <p className="text-sm text-olive mb-4">From $16.00</p>
-                  <Button href="/shop" variant="ghost" size="sm">View Details</Button>
+            {featuredProducts.map((product, i) => (
+              <ScrollReveal key={product.name} delay={i * 0.15}>
+                <div className="group bg-linen text-center hover:bg-sage/20 transition-colors duration-300 overflow-hidden">
+                  <div className="w-full aspect-square relative overflow-hidden">
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h3 className="font-serif text-2xl text-ink mb-2">{product.name}</h3>
+                    <p className="text-sm text-olive mb-4">From {product.price}</p>
+                    <Button href="/shop" variant="ghost" size="sm">View Details</Button>
+                  </div>
                 </div>
               </ScrollReveal>
             ))}

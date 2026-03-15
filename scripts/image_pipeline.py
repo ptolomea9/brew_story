@@ -144,12 +144,12 @@ def poll_task(task_id: str, max_wait: int = 300) -> dict | None:
             )
             r.raise_for_status()
             data = r.json().get("data", r.json())
-            status = data.get("status", "").lower()
+            status = (data.get("state") or data.get("status") or "").lower()
 
             if status == "success":
                 return data
             elif status in ("failed", "error"):
-                print(f"    Task {task_id} FAILED: {data.get('message', 'unknown')}")
+                print(f"    Task {task_id} FAILED: {data.get('failMsg') or data.get('message', 'unknown')}")
                 return None
 
             time.sleep(5)
@@ -212,7 +212,7 @@ def upscale_stills():
         print(f"    Source: {url}")
 
         task_id = create_task("recraft/crisp-upscale", {
-            "image_urls": [url],
+            "image": url,
         })
         if not task_id:
             continue
@@ -242,7 +242,7 @@ def generate_images():
         print(f"  Generating: {name}")
         print(f"    Prompt: {target['prompt'][:80]}...")
 
-        task_id = create_task("google/nano-banana-pro", {
+        task_id = create_task("nano-banana-pro", {
             "prompt": target["prompt"],
             "negative_prompt": NEGATIVE_PROMPT,
             "aspect_ratio": target.get("aspect_ratio", "1:1"),

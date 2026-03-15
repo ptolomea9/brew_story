@@ -14,10 +14,11 @@ import { motion } from 'framer-motion';
  */
 interface HeroTimelineProps {
   videoSrc?: string;
+  heroImage?: string;
   className?: string;
 }
 
-export default function HeroTimeline({ videoSrc, className = '' }: HeroTimelineProps) {
+export default function HeroTimeline({ videoSrc, heroImage, className = '' }: HeroTimelineProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
 
@@ -97,23 +98,21 @@ export default function HeroTimeline({ videoSrc, className = '' }: HeroTimelineP
                 loop
                 playsInline
               />
+            ) : heroImage ? (
+              /* eslint-disable-next-line @next/next/no-img-element */
+              <img
+                src={heroImage}
+                alt="Brew Story — craft roasted coffee"
+                className="w-full h-full object-cover"
+              />
             ) : (
-              /* Placeholder — will be replaced with generated video */
               <div className="w-full h-full bg-gradient-to-br from-linen via-sage/20 to-linen relative">
-                {/* Decorative layers to suggest coffee imagery */}
                 <div className="absolute inset-0 flex items-center justify-center">
                   <div className="w-48 h-48 md:w-64 md:h-64 rounded-full bg-sage/20 flex items-center justify-center">
                     <div className="w-32 h-32 md:w-44 md:h-44 rounded-full bg-olive/10 flex items-center justify-center">
                       <div className="w-20 h-20 md:w-28 md:h-28 rounded-full bg-sage/15" />
                     </div>
                   </div>
-                </div>
-
-                {/* "Hero video coming soon" indicator */}
-                <div className="absolute bottom-6 left-6 right-6 text-center">
-                  <p className="text-xs tracking-widest uppercase text-olive/40">
-                    Hero video
-                  </p>
                 </div>
               </div>
             )}
