@@ -8,15 +8,9 @@ import ParallaxLayer from '@/components/animation/ParallaxLayer';
 export default function Home() {
   return (
     <>
-      {/* Hero Section — GSAP kinetic typography */}
+      {/* Hero Section — Split layout: text left, visual right */}
       <section className="bg-linen -mt-16 md:-mt-20">
         <HeroTimeline />
-        <div className="text-center pb-16 -mt-8">
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Button href="/order" size="lg">Order Now</Button>
-            <Button href="/shop" variant="secondary" size="lg">Shop Coffee</Button>
-          </div>
-        </div>
       </section>
 
       {/* Featured Section */}
