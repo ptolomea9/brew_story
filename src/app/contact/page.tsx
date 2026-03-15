@@ -45,9 +45,14 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="aspect-video bg-linen flex items-center justify-center text-olive/40 text-sm">
-                Google Maps embed
+              {/* Storefront Image */}
+              <div className="aspect-video overflow-hidden">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/generated/exterior_storefront.png"
+                  alt="Brew Story storefront in Huntington Beach"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </ScrollReveal>

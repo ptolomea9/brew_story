@@ -50,11 +50,24 @@ export const metadata = {
 
 export default function MenuPage() {
   return (
+    <>
+    {/* Hero Banner */}
+    <section className="relative h-64 md:h-80 overflow-hidden">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/images/generated/hero_latte.png"
+        alt="Craft roasted coffee"
+        className="w-full h-full object-cover"
+      />
+      <div className="absolute inset-0 bg-ink/30 flex items-center justify-center">
+        <h1 className="font-serif text-5xl md:text-7xl text-cream">Menu</h1>
+      </div>
+    </section>
+
     <section className="py-16 md:py-24">
       <Container>
         <ScrollReveal>
           <div className="text-center mb-16">
-            <h1 className="font-serif text-5xl md:text-7xl text-ink mb-4">Menu</h1>
             <p className="text-olive max-w-md mx-auto">
               Craft roasted daily. Made with care.
             </p>
@@ -87,5 +100,6 @@ export default function MenuPage() {
         </div>
       </Container>
     </section>
+    </>
   );
 }

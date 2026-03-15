@@ -9,31 +9,53 @@ export const metadata = {
 
 export default function OrderPage() {
   return (
-    <section className="py-16 md:py-24">
-      <Container>
-        <ScrollReveal>
-          <div className="max-w-2xl mx-auto text-center">
-            <h1 className="font-serif text-5xl md:text-7xl text-ink mb-4">Order Online</h1>
-            <p className="text-olive text-lg mb-12 leading-relaxed">
-              Skip the line. Order ahead for pickup at our Huntington Beach location.
-            </p>
+    <>
+      {/* Hero Banner */}
+      <section className="relative h-64 md:h-80 overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/generated/atmosphere_pourover.png"
+          alt="Pour-over coffee being brewed"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-ink/40 flex items-center justify-center">
+          <h1 className="font-serif text-5xl md:text-7xl text-cream">Order Online</h1>
+        </div>
+      </section>
 
-            {/* Toast Integration Placeholder */}
-            <div className="bg-linen p-12 mb-8">
-              <p className="text-olive mb-6">
-                Online ordering is powered by Toast. Click below to place your order.
+      <section className="py-16 md:py-24">
+        <Container>
+          <ScrollReveal>
+            <div className="max-w-2xl mx-auto text-center">
+              <p className="text-olive text-lg mb-12 leading-relaxed">
+                Skip the line. Order ahead for pickup at our Huntington Beach location.
               </p>
-              <Button size="lg">
-                Order on Toast
-              </Button>
-            </div>
 
-            <p className="text-sm text-olive">
-              Orders are typically ready in 10-15 minutes.
-            </p>
-          </div>
-        </ScrollReveal>
-      </Container>
-    </section>
+              {/* Toast Integration Placeholder */}
+              <div className="bg-linen p-12 mb-8">
+                <div className="w-20 h-20 mx-auto mb-6 rounded-full overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/generated/menu_iced_matcha.png"
+                    alt="Iced matcha latte"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="text-olive mb-6">
+                  Online ordering is powered by Toast. Click below to place your order.
+                </p>
+                <Button size="lg">
+                  Order on Toast
+                </Button>
+              </div>
+
+              <p className="text-sm text-olive">
+                Orders are typically ready in 10-15 minutes.
+              </p>
+            </div>
+          </ScrollReveal>
+        </Container>
+      </section>
+    </>
   );
 }
