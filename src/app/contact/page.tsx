@@ -51,7 +51,7 @@ export default function ContactPage() {
               <div className="aspect-video overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/generated/exterior_storefront.png"
+                  src="/images/exterior_real.jpg"
                   alt="Brew Story storefront in Huntington Beach"
                   className="w-full h-full object-cover"
                 />
