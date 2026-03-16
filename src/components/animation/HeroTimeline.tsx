@@ -6,12 +6,10 @@ import { motion } from 'framer-motion';
 
 /**
  * Hero experience:
- * 1. Video fills the entire hero section — no visible edges
- * 2. Video plays (5s): beans pouring → latte with Brew Story logo art
- * 3. Video ends, holds on last frame
- * 4. Video slides to the right half, text animates in from the left
- * 5. In final state, video bleeds off the right/top/bottom edges,
- *    with a soft gradient fade on the left edge where it meets text.
+ * 1. Page loads in settled layout (text left, video right)
+ * 2. Text animates in (fade + slide), video slides into position
+ * 3. Video autoplays in its right-side position
+ * 4. Return visits: everything shows instantly, no animation
  */
 interface HeroTimelineProps {
   videoSrc?: string;
@@ -22,29 +20,36 @@ interface HeroTimelineProps {
 export default function HeroTimeline({ videoSrc, heroImage, className = '' }: HeroTimelineProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [videoEnded, setVideoEnded] = useState(!videoSrc);
+  const [animationReady, setAnimationReady] = useState(false);
+  const [skipAnimation, setSkipAnimation] = useState(false);
 
-  // Skip video if already seen this session
+  // On mount: trigger entrance animations (or skip on return visits)
   useEffect(() => {
-    if (sessionStorage.getItem('brew-story-hero-seen')) {
-      setVideoEnded(true);
+    const seen = sessionStorage.getItem('brew-story-hero-seen');
+    if (seen) {
+      setSkipAnimation(true);
+      setAnimationReady(true);
+    } else {
+      sessionStorage.setItem('brew-story-hero-seen', '1');
+      // Small delay so layout paints first, then animate in
+      requestAnimationFrame(() => setAnimationReady(true));
     }
+    window.dispatchEvent(new Event('heroVideoEnded'));
   }, []);
 
-  // Floating parallax elements (only after text is visible)
+  // Floating parallax elements
   useEffect(() => {
-    if (!videoEnded) return;
+    if (!animationReady) return;
     const ctx = gsap.context(() => {
       gsap.timeline({ repeat: -1, yoyo: true })
         .to('.hero-float-1', { y: -20, x: 10, rotation: 2, duration: 4, ease: 'power2.inOut' }, 0)
         .to('.hero-float-2', { y: 15, x: -12, rotation: -1.5, duration: 5, ease: 'power2.inOut' }, 0);
     }, containerRef);
     return () => ctx.revert();
-  }, [videoEnded]);
+  }, [animationReady]);
 
   const handleVideoEnd = useCallback(() => {
-    setVideoEnded(true);
-    window.dispatchEvent(new Event('heroVideoEnded'));
+    sessionStorage.setItem('brew-story-hero-seen', '1');
   }, []);
 
   const textVariants = {
@@ -63,22 +68,25 @@ export default function HeroTimeline({ videoSrc, heroImage, className = '' }: He
     },
   } as const;
 
+  // Desktop slide target
+  const slideX = typeof window !== 'undefined' && window.innerWidth >= 768 ? '25%' : 0;
+
   return (
-    <div ref={containerRef} className={`relative ${videoEnded ? 'bg-[#EEF0E4] min-h-screen md:h-[90vh]' : 'bg-[#EEF0E4] h-screen'} overflow-hidden transition-all duration-1000 ${className}`}>
+    <div ref={containerRef} className={`relative bg-[#EEF0E4] min-h-screen md:h-[90vh] overflow-hidden ${className}`}>
 
       {/* ── VIDEO LAYER ── */}
-      {/* Mobile: flows in document after text. Desktop: absolute positioned, slides right */}
       <motion.div
-        className={`${videoEnded ? 'bg-[#EEF0E4]' : ''} ${videoEnded ? 'md:absolute md:inset-0' : 'absolute inset-0'}`}
-        initial={{ x: 0 }}
-        animate={videoEnded ? { x: typeof window !== 'undefined' && window.innerWidth >= 768 ? '25%' : 0 } : { x: 0 }}
+        className="bg-[#EEF0E4] md:absolute md:inset-0"
+        initial={skipAnimation ? { x: slideX } : { x: 0 }}
+        animate={animationReady ? { x: slideX } : { x: 0 }}
         transition={{ duration: 1.4, ease: [0.25, 0.46, 0.45, 0.94] }}
       >
         {/* Left edge fade — desktop only */}
         <div
-          className="absolute inset-0 z-10 pointer-events-none transition-opacity duration-1000 hidden md:block"
+          className="absolute inset-0 z-10 pointer-events-none hidden md:block"
           style={{
-            opacity: videoEnded ? 1 : 0,
+            opacity: animationReady ? 1 : 0,
+            transition: 'opacity 1s',
             background: 'linear-gradient(to right, #EEF0E4 0%, #EEF0E4 10%, transparent 50%)',
           }}
         />
@@ -87,8 +95,8 @@ export default function HeroTimeline({ videoSrc, heroImage, className = '' }: He
           <video
             ref={videoRef}
             src={videoSrc}
-            className={`w-full h-full ${videoEnded ? 'object-contain' : 'object-cover'}`}
-            style={videoEnded ? { objectPosition: 'center 60%' } : undefined}
+            className="w-full h-full object-contain"
+            style={{ objectPosition: 'center 60%' }}
             autoPlay
             muted
             playsInline
@@ -101,7 +109,7 @@ export default function HeroTimeline({ videoSrc, heroImage, className = '' }: He
             src={heroImage}
             alt="Brew Story — craft roasted coffee"
             className="w-full h-full object-contain"
-            style={videoEnded ? { objectPosition: 'center 60%' } : undefined}
+            style={{ objectPosition: 'center 60%' }}
           />
         ) : (
           <div className="w-full h-full bg-linen" />
@@ -109,12 +117,11 @@ export default function HeroTimeline({ videoSrc, heroImage, className = '' }: He
       </motion.div>
 
       {/* ── TEXT LAYER ── */}
-      {/* Mobile: stacked below video. Desktop: overlaid on left */}
       <motion.div
-        initial="hidden"
-        animate={videoEnded ? 'visible' : 'hidden'}
+        initial={skipAnimation ? 'visible' : 'hidden'}
+        animate={animationReady ? 'visible' : 'hidden'}
         variants={staggerChildren}
-        className={`relative z-20 ${videoEnded ? 'py-12 md:py-0 md:h-full md:flex md:items-center' : 'h-full flex items-center'}`}
+        className="relative z-20 py-12 md:py-0 md:h-full md:flex md:items-center"
       >
         <div className="mx-auto max-w-7xl px-6 w-full">
           <div className="max-w-lg">
@@ -154,22 +161,20 @@ export default function HeroTimeline({ videoSrc, heroImage, className = '' }: He
       </motion.div>
 
       {/* Bottom scroll indicator */}
-      {videoEnded && (
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={animationReady ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ delay: 1, duration: 0.8 }}
+        className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20"
+      >
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1, duration: 0.8 }}
-          className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20"
+          animate={{ y: [0, 8, 0] }}
+          transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
+          className="w-5 h-8 border border-olive/30 rounded-full flex justify-center pt-1.5"
         >
-          <motion.div
-            animate={{ y: [0, 8, 0] }}
-            transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }}
-            className="w-5 h-8 border border-olive/30 rounded-full flex justify-center pt-1.5"
-          >
-            <div className="w-1 h-2 bg-olive/40 rounded-full" />
-          </motion.div>
+          <div className="w-1 h-2 bg-olive/40 rounded-full" />
         </motion.div>
-      )}
+      </motion.div>
     </div>
   );
 }
