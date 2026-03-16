@@ -72,15 +72,15 @@ export default function Home() {
         <Container className="relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <TextReveal
-              text="Every bean has a story. This is ours."
+              text="More than a cup of coffee."
               as="h2"
               className="font-serif text-4xl md:text-6xl text-ink mb-8 leading-tight"
             />
             <ScrollReveal delay={0.4}>
               <p className="text-olive text-lg mb-8 leading-relaxed">
-                Born in Huntington Beach, Brew Story is more than a coffee shop.
-                We roast every batch in-house, print our merch on-site, and pour
-                every drink with intention.
+                Born in Huntington Beach, Brew Story is a roastery, a brand,
+                and a gathering place. We roast every batch in-house, design
+                our own merch, and pour every drink with intention.
               </p>
               <Button href="/about" variant="ghost" size="lg">Read Our Story</Button>
             </ScrollReveal>
