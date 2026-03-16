@@ -1,6 +1,7 @@
 import Container from '@/components/ui/Container';
 import ScrollReveal from '@/components/animation/ScrollReveal';
 import ShopContent from '@/components/shop/ShopContent';
+import PageHero from '@/components/ui/PageHero';
 
 const coffeeProducts = [
   { id: '1', name: 'House Blend', slug: 'house-blend', price: 1800, category: 'coffee', image: '/images/generated/product_coffee_bags.png' },
@@ -21,11 +22,12 @@ export const metadata = {
 
 export default function ShopPage() {
   return (
+    <>
+    <PageHero title="Shop" />
     <section className="py-16 md:py-24">
       <Container>
         <ScrollReveal>
           <div className="text-center mb-16">
-            <h1 className="font-serif text-5xl md:text-7xl text-ink mb-4">Shop</h1>
             <p className="text-olive max-w-md mx-auto">
               Fresh roasted beans and original merch, made in Huntington Beach.
             </p>
@@ -35,5 +37,6 @@ export default function ShopPage() {
         <ShopContent coffeeProducts={coffeeProducts} merchProducts={merchProducts} />
       </Container>
     </section>
+    </>
   );
 }

@@ -1,0 +1,506 @@
+[
+  {
+    "name": "Banana MATCHA Latte",
+    "price": 6.75,
+    "in_stock": true,
+    "category": "Matcha"
+  },
+  {
+    "name": "MaMa Latte Matcha latte with matcha cream top.",
+    "price": 8.5,
+    "in_stock": true,
+    "category": "Matcha"
+  },
+  {
+    "name": "Cookie Butter Cream Top Matcha Latte",
+    "price": 7.25,
+    "in_stock": true,
+    "category": "Matcha"
+  },
+  {
+    "name": "Morning Drip Regular",
+    "price": 3.25,
+    "in_stock": false,
+    "category": "Coffee (Hot)"
+  },
+  {
+    "name": "Morning Drip Large",
+    "price": 3.75,
+    "in_stock": false,
+    "category": "Coffee (Hot)"
+  },
+  {
+    "name": "Hot Americano",
+    "price": 4.0,
+    "in_stock": true,
+    "category": "Coffee (Hot)"
+  },
+  {
+    "name": "Cappuccino",
+    "price": 5.0,
+    "in_stock": true,
+    "category": "Coffee (Hot)"
+  },
+  {
+    "name": "Flat White",
+    "price": 5.0,
+    "in_stock": true,
+    "category": "Coffee (Hot)"
+  },
+  {
+    "name": "Cortado",
+    "price": 4.5,
+    "in_stock": true,
+    "category": "Coffee (Hot)"
+  },
+  {
+    "name": "Espresso",
+    "price": 4.0,
+    "in_stock": true,
+    "category": "Coffee (Hot)"
+  },
+  {
+    "name": "Pour Over",
+    "price": 5.75,
+    "in_stock": true,
+    "category": "Coffee (Hot)"
+  },
+  {
+    "name": "Hot Latte",
+    "price": 5.0,
+    "in_stock": true,
+    "category": "Coffee (Hot)"
+  },
+  {
+    "name": "Hot Vanilla Latte",
+    "price": 5.5,
+    "in_stock": true,
+    "category": "Coffee (Hot)"
+  },
+  {
+    "name": "Hot Spanish Latte",
+    "price": 5.75,
+    "in_stock": true,
+    "category": "Coffee (Hot)"
+  },
+  {
+    "name": "Traditional Macchiato",
+    "price": 4.0,
+    "in_stock": true,
+    "category": "Coffee (Hot)"
+  },
+  {
+    "name": "Hot Mocha Latte",
+    "price": 5.5,
+    "in_stock": true,
+    "category": "Coffee (Hot)"
+  },
+  {
+    "name": "Iced Latte",
+    "price": 5.0,
+    "in_stock": true,
+    "category": "Coffee (Iced)"
+  },
+  {
+    "name": "Banana Cream COFFEE Latte",
+    "price": 6.75,
+    "in_stock": true,
+    "category": "Signature"
+  },
+  {
+    "name": "Iced Vanilla Latte",
+    "price": 5.5,
+    "in_stock": true,
+    "category": "Coffee (Iced)"
+  },
+  {
+    "name": "Tiramisu Latte",
+    "price": 7.5,
+    "in_stock": true,
+    "category": "Signature"
+  },
+  {
+    "name": "Sweet Corn Latte",
+    "price": 6.5,
+    "in_stock": true,
+    "category": "Signature"
+  },
+  {
+    "name": "Coconut Cloud Latte",
+    "price": 6.75,
+    "in_stock": true,
+    "category": "Signature"
+  },
+  {
+    "name": "Iced Brown Sugar Latte",
+    "price": 5.5,
+    "in_stock": true,
+    "category": "Coffee (Iced)"
+  },
+  {
+    "name": "Iced Spanish Latte",
+    "price": 5.75,
+    "in_stock": true,
+    "category": "Coffee (Iced)"
+  },
+  {
+    "name": "Iced Mocha Latte",
+    "price": 5.5,
+    "in_stock": true,
+    "category": "Coffee (Iced)"
+  },
+  {
+    "name": "Iced Americano",
+    "price": 4.0,
+    "in_stock": true,
+    "category": "Coffee (Iced)"
+  },
+  {
+    "name": "Tiramisu Americano",
+    "price": 6.75,
+    "in_stock": true,
+    "category": "Coffee (Hot)"
+  },
+  {
+    "name": "Cream Top Americano",
+    "price": 6.0,
+    "in_stock": true,
+    "category": "Coffee (Iced)"
+  },
+  {
+    "name": "Iced Lavender Butterfly Pea Latte",
+    "price": 5.75,
+    "in_stock": true,
+    "category": "Coffee (Iced)"
+  },
+  {
+    "name": "Salted Caramel Cream Topped Latte",
+    "price": 6.75,
+    "in_stock": true,
+    "category": "Signature"
+  },
+  {
+    "name": "Fine Robusta Iced Coffee",
+    "price": 5.5,
+    "in_stock": true,
+    "category": "Coffee (Iced)"
+  },
+  {
+    "name": "The Yoda Iced Latte with Matcha Cream top.",
+    "price": 8.0,
+    "in_stock": true,
+    "category": "Matcha"
+  },
+  {
+    "name": "Yuzu Espresso Tonic",
+    "price": 6.75,
+    "in_stock": false,
+    "category": "Coffee (Iced)"
+  },
+  {
+    "name": "Creme Brulee Latte",
+    "price": 7.25,
+    "in_stock": true,
+    "category": "Signature"
+  },
+  {
+    "name": "Cookie Butter Cream Top Latte",
+    "price": 7.25,
+    "in_stock": true,
+    "category": "Signature"
+  },
+  {
+    "name": "Cold Brew",
+    "price": 5.5,
+    "in_stock": false,
+    "category": "Coffee (Iced)"
+  },
+  {
+    "name": "Sweet Corn Matcha Latte",
+    "price": 6.75,
+    "in_stock": true,
+    "category": "Matcha"
+  },
+  {
+    "name": "Coconut Cloud Matcha",
+    "price": 6.75,
+    "in_stock": true,
+    "category": "Matcha"
+  },
+  {
+    "name": "Strawberry Matcha Latte",
+    "price": 6.75,
+    "in_stock": true,
+    "category": "Matcha"
+  },
+  {
+    "name": "Matcha Latte",
+    "price": 5.5,
+    "in_stock": true,
+    "category": "Matcha"
+  },
+  {
+    "name": "Lavender Butterfly Pea Matcha Latte",
+    "price": 6.25,
+    "in_stock": true,
+    "category": "Matcha"
+  },
+  {
+    "name": "Hojicha",
+    "price": 5.5,
+    "in_stock": true,
+    "category": "Hojicha"
+  },
+  {
+    "name": "Creme Brulee Matcha Latte",
+    "price": 7.25,
+    "in_stock": true,
+    "category": "Matcha"
+  },
+  {
+    "name": "Strawberry SHORTCAKE Matcha Latte",
+    "price": 6.75,
+    "in_stock": false,
+    "category": "Matcha"
+  },
+  {
+    "name": "Coconut Water Matcha Cream Top",
+    "price": 6.75,
+    "in_stock": true,
+    "category": "Matcha"
+  },
+  {
+    "name": "Sparkling Yuzu Matcha Sparkling Water, Yuzu Citrus, Matcha",
+    "price": 6.75,
+    "in_stock": true,
+    "category": "Matcha"
+  },
+  {
+    "name": "Pumpkin Pie Matcha Latte",
+    "price": 6.75,
+    "in_stock": false,
+    "category": "Matcha"
+  },
+  {
+    "name": "Masala Chai Latte",
+    "price": 5.5,
+    "in_stock": true,
+    "category": "Specialty Tea"
+  },
+  {
+    "name": "Earl Grey Blend",
+    "price": 4.0,
+    "in_stock": true,
+    "category": "Specialty Tea"
+  },
+  {
+    "name": "Phoenix Jasmine Pearl",
+    "price": 5.0,
+    "in_stock": false,
+    "category": "Specialty Tea"
+  },
+  {
+    "name": "Peach Oolong",
+    "price": 4.0,
+    "in_stock": false,
+    "category": "Specialty Tea"
+  },
+  {
+    "name": "Wild Strawberry",
+    "price": 4.0,
+    "in_stock": false,
+    "category": "Specialty Tea"
+  },
+  {
+    "name": "Strawberry Citrus Sparkler Fresh Strawberries, Yuzu, Sparkling water",
+    "price": 4.95,
+    "in_stock": false,
+    "category": "Citrus Sparklers"
+  },
+  {
+    "name": "Yuzu Citrus Sparkler",
+    "price": 4.95,
+    "in_stock": false,
+    "category": "Citrus Sparklers"
+  },
+  {
+    "name": "Butter Croissant",
+    "price": 4.0,
+    "in_stock": false,
+    "category": "Pastries"
+  },
+  {
+    "name": "Ham and Cheese Croissant",
+    "price": 5.5,
+    "in_stock": false,
+    "category": "Pastries"
+  },
+  {
+    "name": "Almond Croissant",
+    "price": 5.5,
+    "in_stock": true,
+    "category": "Pastries"
+  },
+  {
+    "name": "Chocolate Croissant",
+    "price": 5.5,
+    "in_stock": true,
+    "category": "Pastries"
+  },
+  {
+    "name": "Bacon Tomato Croissant",
+    "price": 5.5,
+    "in_stock": false,
+    "category": "Pastries"
+  },
+  {
+    "name": "Raspberry Pistachio Croissant",
+    "price": 5.5,
+    "in_stock": false,
+    "category": "Pastries"
+  },
+  {
+    "name": "Spinach Mushroom Feta Croissant",
+    "price": 5.5,
+    "in_stock": true,
+    "category": "Pastries"
+  },
+  {
+    "name": "Bacon Jalape\u00f1o Cream Cheese Croissant",
+    "price": 5.5,
+    "in_stock": true,
+    "category": "Pastries"
+  },
+  {
+    "name": "The Tuna",
+    "price": 14.75,
+    "in_stock": false,
+    "category": "Sandwiches"
+  },
+  {
+    "name": "The Turkey",
+    "price": 14.25,
+    "in_stock": true,
+    "category": "Sandwiches"
+  },
+  {
+    "name": "The Roast Beef",
+    "price": 15.75,
+    "in_stock": true,
+    "category": "Sandwiches"
+  },
+  {
+    "name": "The Italian",
+    "price": 15.75,
+    "in_stock": false,
+    "category": "Signature"
+  },
+  {
+    "name": "House Cured Salmon Toast",
+    "price": 17.5,
+    "in_stock": false,
+    "category": "Sandwiches"
+  },
+  {
+    "name": "Avocado Toast",
+    "price": 10.0,
+    "in_stock": true,
+    "category": "Pastries"
+  },
+  {
+    "name": "Strawberry Milk",
+    "price": 3.5,
+    "in_stock": true,
+    "category": "Non-Coffee"
+  },
+  {
+    "name": "Chocolate Milk",
+    "price": 3.5,
+    "in_stock": true,
+    "category": "Non-Coffee"
+  },
+  {
+    "name": "Hot Chocolate",
+    "price": 3.5,
+    "in_stock": true,
+    "category": "Non-Coffee"
+  },
+  {
+    "name": "Babycino",
+    "price": 3.5,
+    "in_stock": true,
+    "category": "Non-Coffee"
+  },
+  {
+    "name": "Banana Milk",
+    "price": 3.5,
+    "in_stock": true,
+    "category": "Non-Coffee"
+  },
+  {
+    "name": "Corn Milk",
+    "price": 3.5,
+    "in_stock": true,
+    "category": "Non-Coffee"
+  },
+  {
+    "name": "S Shirt",
+    "price": 35.0,
+    "in_stock": false,
+    "category": "Merchandise"
+  },
+  {
+    "name": "M Shirt",
+    "price": 35.0,
+    "in_stock": true,
+    "category": "Merchandise"
+  },
+  {
+    "name": "L Shirt",
+    "price": 35.0,
+    "in_stock": true,
+    "category": "Merchandise"
+  },
+  {
+    "name": "XL Shirt",
+    "price": 35.0,
+    "in_stock": true,
+    "category": "Merchandise"
+  },
+  {
+    "name": "XXL Shirt",
+    "price": 35.0,
+    "in_stock": true,
+    "category": "Merchandise"
+  },
+  {
+    "name": "XXXL Shirt",
+    "price": 35.0,
+    "in_stock": true,
+    "category": "Merchandise"
+  },
+  {
+    "name": "M Sweater",
+    "price": 60.0,
+    "in_stock": true,
+    "category": "Merchandise"
+  },
+  {
+    "name": "L Sweater",
+    "price": 60.0,
+    "in_stock": true,
+    "category": "Merchandise"
+  },
+  {
+    "name": "XL Sweater",
+    "price": 60.0,
+    "in_stock": true,
+    "category": "Merchandise"
+  },
+  {
+    "name": "XXL Sweater",
+    "price": 60.0,
+    "in_stock": true,
+    "category": "Merchandise"
+  }
+]

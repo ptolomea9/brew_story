@@ -65,7 +65,7 @@ scripts/
 - HeroTimeline accepts videoSrc (priority) or heroImage prop for the right-side visual
 
 ## Image Pipeline (kie.ai)
-- API key: `7cde39d381c7cabab1a9c9d7c0798392`
+- API key: `KIE_AI_API_KEY` env var (in .env.local)
 - Generation model: `nano-banana-pro` (no vendor prefix)
 - Upscale model: `recraft/crisp-upscale` (uses `image` param, not `image_urls`)
 - Poll field: `state` not `status` in recordInfo response

@@ -14,7 +14,7 @@ import json
 import os
 import sys
 
-API_KEY = "7cde39d381c7cabab1a9c9d7c0798392"
+API_KEY = os.environ.get("KIE_AI_API_KEY", "")
 BASE_URL = "https://api.kie.ai/api/v1/jobs"
 HEADERS = {"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"}
 

@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import FooterGate from '@/components/layout/FooterGate';
 import LenisProvider from '@/components/providers/LenisProvider';
-import LogoSplash from '@/components/animation/LogoSplash';
 
 export const metadata: Metadata = {
   title: {
@@ -28,12 +28,12 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         <LenisProvider>
-          <LogoSplash />
+          {/* <LogoSplash /> */}
           <Header />
           <main className="min-h-screen pt-16 md:pt-20">
             {children}
           </main>
-          <Footer />
+          <FooterGate><Footer /></FooterGate>
         </LenisProvider>
       </body>
     </html>

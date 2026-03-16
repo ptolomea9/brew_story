@@ -20,9 +20,8 @@ export const menuItem = defineType({
     defineField({
       name: 'price',
       title: 'Price',
-      type: 'string',
-      description: 'Display price (e.g. "$5.50")',
-      validation: (r) => r.required(),
+      type: 'number',
+      validation: (r) => r.required().positive(),
     }),
     defineField({
       name: 'category',
@@ -30,10 +29,17 @@ export const menuItem = defineType({
       type: 'string',
       options: {
         list: [
-          { title: 'Espresso', value: 'espresso' },
-          { title: 'Specialty', value: 'specialty' },
-          { title: 'Cold Drinks', value: 'cold' },
+          { title: 'Coffee (Hot)', value: 'coffee-hot' },
+          { title: 'Coffee (Iced)', value: 'coffee-iced' },
+          { title: 'Signature', value: 'signature' },
+          { title: 'Matcha', value: 'matcha' },
+          { title: 'Hojicha', value: 'hojicha' },
+          { title: 'Specialty Tea', value: 'specialty-tea' },
+          { title: 'Citrus Sparklers', value: 'citrus-sparklers' },
+          { title: 'Non-Coffee', value: 'non-coffee' },
           { title: 'Pastries', value: 'pastries' },
+          { title: 'Sandwiches', value: 'sandwiches' },
+          { title: 'Merchandise', value: 'merchandise' },
         ],
       },
       validation: (r) => r.required(),
@@ -52,6 +58,12 @@ export const menuItem = defineType({
           { title: 'New', value: 'new' },
         ],
       },
+    }),
+    defineField({
+      name: 'featured',
+      title: 'Featured on Homepage',
+      type: 'boolean',
+      initialValue: false,
     }),
     defineField({
       name: 'image',
@@ -76,6 +88,13 @@ export const menuItem = defineType({
     { title: 'Sort Order', name: 'sortOrder', by: [{ field: 'sortOrder', direction: 'asc' }] },
   ],
   preview: {
-    select: { title: 'name', subtitle: 'category', media: 'image' },
+    select: { title: 'name', subtitle: 'category', media: 'image', available: 'available', price: 'price' },
+    prepare({ title, subtitle, media, available, price }) {
+      return {
+        title: `${available === false ? '🔴 ' : ''}${title}`,
+        subtitle: `${subtitle} — $${price?.toFixed(2) ?? '?'}`,
+        media,
+      };
+    },
   },
 });

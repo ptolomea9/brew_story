@@ -1,0 +1,690 @@
+{
+  "tiramisu-latte": {
+    "name": "Tiramisu Latte",
+    "price": "$7.50",
+    "category": "signature-drinks",
+    "image": "/images/menu/tiramisu-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Tiramisu Latte"
+  },
+  "banana-cream-latte": {
+    "name": "Banana Cream Coffee Latte",
+    "price": "$6.75",
+    "category": "signature-drinks",
+    "image": "/images/menu/banana-cream-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Banana Cream Coffee Latte"
+  },
+  "sweet-corn-latte": {
+    "name": "Sweet Corn Latte",
+    "price": "$6.50",
+    "category": "signature-drinks",
+    "image": "/images/menu/sweet-corn-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Sweet Corn Latte"
+  },
+  "mama-latte": {
+    "name": "MaMa Latte",
+    "price": "$8.50",
+    "category": "signature-drinks",
+    "image": "/images/menu/mama-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for MaMa Latte"
+  },
+  "creme-brulee-latte": {
+    "name": "Creme Brulee Latte",
+    "price": "$7.25",
+    "category": "signature-drinks",
+    "image": "/images/menu/creme-brulee-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Creme Brulee Latte"
+  },
+  "coconut-cloud-latte": {
+    "name": "Coconut Cloud Latte",
+    "price": "$6.75",
+    "category": "signature-drinks",
+    "image": "/images/menu/coconut-cloud-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Coconut Cloud Latte"
+  },
+  "the-yoda": {
+    "name": "The Yoda",
+    "price": "$8.00",
+    "category": "signature-drinks",
+    "image": "/images/menu/the-yoda.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for The Yoda"
+  },
+  "tiramisu-americano": {
+    "name": "Tiramisu Americano",
+    "price": "$6.75",
+    "category": "signature-drinks",
+    "image": "/images/menu/tiramisu-americano.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Tiramisu Americano"
+  },
+  "spanish-latte": {
+    "name": "Spanish Latte",
+    "price": "$5.75",
+    "category": "signature-drinks",
+    "image": "/images/menu/spanish-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Spanish Latte"
+  },
+  "lavender-butterfly-pea-latte": {
+    "name": "Lavender Butterfly Pea Latte",
+    "price": "$5.75",
+    "category": "signature-drinks",
+    "image": "/images/menu/lavender-butterfly-pea-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Lavender Butterfly Pea Latte"
+  },
+  "matcha-latte": {
+    "name": "Matcha Latte",
+    "price": "$5.50",
+    "category": "matcha",
+    "image": "/images/menu/matcha-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Matcha Latte"
+  },
+  "avocado-toast": {
+    "name": "Avocado Toast",
+    "price": "$10.00",
+    "category": "food",
+    "image": "/images/menu/avocado-toast.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Avocado Toast"
+  },
+  "the-turkey": {
+    "name": "The Turkey Sandwich",
+    "price": "$14.25",
+    "category": "food",
+    "image": "/images/menu/the-turkey.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for The Turkey Sandwich"
+  },
+  "almond-croissant": {
+    "name": "Almond Croissant",
+    "price": "$5.50",
+    "category": "pastry",
+    "image": "/images/menu/almond-croissant.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Almond Croissant"
+  },
+  "house-cured-salmon-toast": {
+    "name": "House Cured Salmon Toast",
+    "price": "$17.50",
+    "category": "food",
+    "image": "/images/menu/house-cured-salmon-toast.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for House Cured Salmon Toast"
+  },
+  "banana-matcha-latte": {
+    "name": "Banana MATCHA Latte",
+    "price": "$6.75",
+    "category": "matcha",
+    "image": "/images/menu/banana-matcha-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Banana MATCHA Latte"
+  },
+  "cookie-butter-cream-top-matcha-latte": {
+    "name": "Cookie Butter Cream Top Matcha Latte",
+    "price": "$7.25",
+    "category": "matcha",
+    "image": "/images/menu/cookie-butter-cream-top-matcha-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Cookie Butter Cream Top Matcha Latte"
+  },
+  "morning-drip-regular": {
+    "name": "Morning Drip Regular",
+    "price": "$3.25",
+    "category": "coffee-hot",
+    "image": "/images/menu/morning-drip-regular.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Morning Drip Regular"
+  },
+  "morning-drip-large": {
+    "name": "Morning Drip Large",
+    "price": "$3.75",
+    "category": "coffee-hot",
+    "image": "/images/menu/morning-drip-large.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Morning Drip Large"
+  },
+  "hot-americano": {
+    "name": "Hot Americano",
+    "price": "$4.00",
+    "category": "coffee-hot",
+    "image": "/images/menu/hot-americano.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Hot Americano"
+  },
+  "cappuccino": {
+    "name": "Cappuccino",
+    "price": "$5.00",
+    "category": "coffee-hot",
+    "image": "/images/menu/cappuccino.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Cappuccino"
+  },
+  "flat-white": {
+    "name": "Flat White",
+    "price": "$5.00",
+    "category": "coffee-hot",
+    "image": "/images/menu/flat-white.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Flat White"
+  },
+  "cortado": {
+    "name": "Cortado",
+    "price": "$4.50",
+    "category": "coffee-hot",
+    "image": "/images/menu/cortado.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Cortado"
+  },
+  "espresso": {
+    "name": "Espresso",
+    "price": "$4.00",
+    "category": "coffee-hot",
+    "image": "/images/menu/espresso.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Espresso"
+  },
+  "pour-over": {
+    "name": "Pour Over",
+    "price": "$5.75",
+    "category": "coffee-hot",
+    "image": "/images/menu/pour-over.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Pour Over"
+  },
+  "hot-latte": {
+    "name": "Hot Latte",
+    "price": "$5.00",
+    "category": "coffee-hot",
+    "image": "/images/menu/hot-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Hot Latte"
+  },
+  "hot-vanilla-latte": {
+    "name": "Hot Vanilla Latte",
+    "price": "$5.50",
+    "category": "coffee-hot",
+    "image": "/images/menu/hot-vanilla-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Hot Vanilla Latte"
+  },
+  "hot-spanish-latte": {
+    "name": "Hot Spanish Latte",
+    "price": "$5.75",
+    "category": "coffee-hot",
+    "image": "/images/menu/hot-spanish-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Hot Spanish Latte"
+  },
+  "traditional-macchiato": {
+    "name": "Traditional Macchiato",
+    "price": "$4.00",
+    "category": "coffee-hot",
+    "image": "/images/menu/traditional-macchiato.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Traditional Macchiato"
+  },
+  "hot-mocha-latte": {
+    "name": "Hot Mocha Latte",
+    "price": "$5.50",
+    "category": "coffee-hot",
+    "image": "/images/menu/hot-mocha-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Hot Mocha Latte"
+  },
+  "iced-latte": {
+    "name": "Iced Latte",
+    "price": "$5.00",
+    "category": "coffee-iced",
+    "image": "/images/menu/iced-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Iced Latte"
+  },
+  "iced-vanilla-latte": {
+    "name": "Iced Vanilla Latte",
+    "price": "$5.50",
+    "category": "coffee-iced",
+    "image": "/images/menu/iced-vanilla-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Iced Vanilla Latte"
+  },
+  "iced-brown-sugar-latte": {
+    "name": "Iced Brown Sugar Latte",
+    "price": "$5.50",
+    "category": "coffee-iced",
+    "image": "/images/menu/iced-brown-sugar-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Iced Brown Sugar Latte"
+  },
+  "iced-spanish-latte": {
+    "name": "Iced Spanish Latte",
+    "price": "$5.75",
+    "category": "coffee-iced",
+    "image": "/images/menu/iced-spanish-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Iced Spanish Latte"
+  },
+  "iced-mocha-latte": {
+    "name": "Iced Mocha Latte",
+    "price": "$5.50",
+    "category": "coffee-iced",
+    "image": "/images/menu/iced-mocha-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Iced Mocha Latte"
+  },
+  "iced-americano": {
+    "name": "Iced Americano",
+    "price": "$4.00",
+    "category": "coffee-iced",
+    "image": "/images/menu/iced-americano.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Iced Americano"
+  },
+  "cream-top-americano": {
+    "name": "Cream Top Americano",
+    "price": "$6.00",
+    "category": "coffee-iced",
+    "image": "/images/menu/cream-top-americano.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Cream Top Americano"
+  },
+  "iced-lavender-butterfly-pea-latte": {
+    "name": "Iced Lavender Butterfly Pea Latte",
+    "price": "$5.75",
+    "category": "coffee-iced",
+    "image": "/images/menu/iced-lavender-butterfly-pea-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Iced Lavender Butterfly Pea Latte"
+  },
+  "salted-caramel-cream-topped-latte": {
+    "name": "Salted Caramel Cream Topped Latte",
+    "price": "$6.75",
+    "category": "signature-drinks",
+    "image": "/images/menu/salted-caramel-cream-topped-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Salted Caramel Cream Topped Latte"
+  },
+  "fine-robusta-iced-coffee": {
+    "name": "Fine Robusta Iced Coffee",
+    "price": "$5.50",
+    "category": "coffee-iced",
+    "image": "/images/menu/fine-robusta-iced-coffee.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Fine Robusta Iced Coffee"
+  },
+  "yuzu-espresso-tonic": {
+    "name": "Yuzu Espresso Tonic",
+    "price": "$6.75",
+    "category": "coffee-iced",
+    "image": "/images/menu/yuzu-espresso-tonic.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Yuzu Espresso Tonic"
+  },
+  "cookie-butter-cream-top-latte": {
+    "name": "Cookie Butter Cream Top Latte",
+    "price": "$7.25",
+    "category": "signature-drinks",
+    "image": "/images/menu/cookie-butter-cream-top-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Cookie Butter Cream Top Latte"
+  },
+  "cold-brew": {
+    "name": "Cold Brew",
+    "price": "$5.50",
+    "category": "coffee-iced",
+    "image": "/images/menu/cold-brew.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Cold Brew"
+  },
+  "sweet-corn-matcha-latte": {
+    "name": "Sweet Corn Matcha Latte",
+    "price": "$6.75",
+    "category": "matcha",
+    "image": "/images/menu/sweet-corn-matcha-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Sweet Corn Matcha Latte"
+  },
+  "coconut-cloud-matcha": {
+    "name": "Coconut Cloud Matcha",
+    "price": "$6.75",
+    "category": "matcha",
+    "image": "/images/menu/coconut-cloud-matcha.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Coconut Cloud Matcha"
+  },
+  "strawberry-matcha-latte": {
+    "name": "Strawberry Matcha Latte",
+    "price": "$6.75",
+    "category": "matcha",
+    "image": "/images/menu/strawberry-matcha-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Strawberry Matcha Latte"
+  },
+  "lavender-butterfly-pea-matcha-latte": {
+    "name": "Lavender Butterfly Pea Matcha Latte",
+    "price": "$6.25",
+    "category": "matcha",
+    "image": "/images/menu/lavender-butterfly-pea-matcha-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Lavender Butterfly Pea Matcha Latte"
+  },
+  "hojicha": {
+    "name": "Hojicha",
+    "price": "$5.50",
+    "category": "hojicha",
+    "image": "/images/menu/hojicha.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Hojicha"
+  },
+  "creme-brulee-matcha-latte": {
+    "name": "Creme Brulee Matcha Latte",
+    "price": "$7.25",
+    "category": "matcha",
+    "image": "/images/menu/creme-brulee-matcha-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Creme Brulee Matcha Latte"
+  },
+  "strawberry-shortcake-matcha-latte": {
+    "name": "Strawberry SHORTCAKE Matcha Latte",
+    "price": "$6.75",
+    "category": "matcha",
+    "image": "/images/menu/strawberry-shortcake-matcha-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Strawberry SHORTCAKE Matcha Latte"
+  },
+  "coconut-water-matcha-cream-top": {
+    "name": "Coconut Water Matcha Cream Top",
+    "price": "$6.75",
+    "category": "matcha",
+    "image": "/images/menu/coconut-water-matcha-cream-top.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Coconut Water Matcha Cream Top"
+  },
+  "sparkling-yuzu-matcha": {
+    "name": "Sparkling Yuzu Matcha Sparkling Water, Yuzu Citrus, Matcha",
+    "price": "$6.75",
+    "category": "matcha",
+    "image": "/images/menu/sparkling-yuzu-matcha.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Sparkling Yuzu Matcha Sparkling Water, Yuzu Citrus, Matcha"
+  },
+  "pumpkin-pie-matcha-latte": {
+    "name": "Pumpkin Pie Matcha Latte",
+    "price": "$6.75",
+    "category": "matcha",
+    "image": "/images/menu/pumpkin-pie-matcha-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Pumpkin Pie Matcha Latte"
+  },
+  "masala-chai-latte": {
+    "name": "Masala Chai Latte",
+    "price": "$5.50",
+    "category": "specialty-tea",
+    "image": "/images/menu/masala-chai-latte.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Masala Chai Latte"
+  },
+  "earl-grey-blend": {
+    "name": "Earl Grey Blend",
+    "price": "$4.00",
+    "category": "specialty-tea",
+    "image": "/images/menu/earl-grey-blend.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Earl Grey Blend"
+  },
+  "phoenix-jasmine-pearl": {
+    "name": "Phoenix Jasmine Pearl",
+    "price": "$5.00",
+    "category": "specialty-tea",
+    "image": "/images/menu/phoenix-jasmine-pearl.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Phoenix Jasmine Pearl"
+  },
+  "peach-oolong": {
+    "name": "Peach Oolong",
+    "price": "$4.00",
+    "category": "specialty-tea",
+    "image": "/images/menu/peach-oolong.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Peach Oolong"
+  },
+  "wild-strawberry": {
+    "name": "Wild Strawberry",
+    "price": "$4.00",
+    "category": "specialty-tea",
+    "image": "/images/menu/wild-strawberry.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Wild Strawberry"
+  },
+  "strawberry-citrus-sparkler": {
+    "name": "Strawberry Citrus Sparkler Fresh Strawberries, Yuzu, Sparkling water",
+    "price": "$4.95",
+    "category": "citrus-sparklers",
+    "image": "/images/menu/strawberry-citrus-sparkler.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Strawberry Citrus Sparkler Fresh Strawberries, Yuzu, Sparkling water"
+  },
+  "yuzu-citrus-sparkler": {
+    "name": "Yuzu Citrus Sparkler",
+    "price": "$4.95",
+    "category": "citrus-sparklers",
+    "image": "/images/menu/yuzu-citrus-sparkler.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Yuzu Citrus Sparkler"
+  },
+  "butter-croissant": {
+    "name": "Butter Croissant",
+    "price": "$4.00",
+    "category": "pastry",
+    "image": "/images/menu/butter-croissant.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Butter Croissant"
+  },
+  "ham-and-cheese-croissant": {
+    "name": "Ham and Cheese Croissant",
+    "price": "$5.50",
+    "category": "pastry",
+    "image": "/images/menu/ham-and-cheese-croissant.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Ham and Cheese Croissant"
+  },
+  "chocolate-croissant": {
+    "name": "Chocolate Croissant",
+    "price": "$5.50",
+    "category": "pastry",
+    "image": "/images/menu/chocolate-croissant.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Chocolate Croissant"
+  },
+  "bacon-tomato-croissant": {
+    "name": "Bacon Tomato Croissant",
+    "price": "$5.50",
+    "category": "pastry",
+    "image": "/images/menu/bacon-tomato-croissant.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Bacon Tomato Croissant"
+  },
+  "raspberry-pistachio-croissant": {
+    "name": "Raspberry Pistachio Croissant",
+    "price": "$5.50",
+    "category": "pastry",
+    "image": "/images/menu/raspberry-pistachio-croissant.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Raspberry Pistachio Croissant"
+  },
+  "spinach-mushroom-feta-croissant": {
+    "name": "Spinach Mushroom Feta Croissant",
+    "price": "$5.50",
+    "category": "pastry",
+    "image": "/images/menu/spinach-mushroom-feta-croissant.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Spinach Mushroom Feta Croissant"
+  },
+  "bacon-jalapeo-cream-cheese-croissant": {
+    "name": "Bacon Jalape\u00f1o Cream Cheese Croissant",
+    "price": "$5.50",
+    "category": "pastry",
+    "image": "/images/menu/bacon-jalapeo-cream-cheese-croissant.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Bacon Jalape\u00f1o Cream Cheese Croissant"
+  },
+  "the-tuna": {
+    "name": "The Tuna",
+    "price": "$14.75",
+    "category": "food",
+    "image": "/images/menu/the-tuna.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for The Tuna"
+  },
+  "the-roast-beef": {
+    "name": "The Roast Beef",
+    "price": "$15.75",
+    "category": "food",
+    "image": "/images/menu/the-roast-beef.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for The Roast Beef"
+  },
+  "the-italian": {
+    "name": "The Italian",
+    "price": "$15.75",
+    "category": "signature-drinks",
+    "image": "/images/menu/the-italian.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for The Italian"
+  },
+  "strawberry-milk": {
+    "name": "Strawberry Milk",
+    "price": "$3.50",
+    "category": "non-coffee",
+    "image": "/images/menu/strawberry-milk.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Strawberry Milk"
+  },
+  "chocolate-milk": {
+    "name": "Chocolate Milk",
+    "price": "$3.50",
+    "category": "non-coffee",
+    "image": "/images/menu/chocolate-milk.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Chocolate Milk"
+  },
+  "hot-chocolate": {
+    "name": "Hot Chocolate",
+    "price": "$3.50",
+    "category": "non-coffee",
+    "image": "/images/menu/hot-chocolate.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Hot Chocolate"
+  },
+  "babycino": {
+    "name": "Babycino",
+    "price": "$3.50",
+    "category": "non-coffee",
+    "image": "/images/menu/babycino.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Babycino"
+  },
+  "banana-milk": {
+    "name": "Banana Milk",
+    "price": "$3.50",
+    "category": "non-coffee",
+    "image": "/images/menu/banana-milk.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Banana Milk"
+  },
+  "corn-milk": {
+    "name": "Corn Milk",
+    "price": "$3.50",
+    "category": "non-coffee",
+    "image": "/images/menu/corn-milk.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for Corn Milk"
+  },
+  "s-shirt": {
+    "name": "S Shirt",
+    "price": "$35.00",
+    "category": "merchandise",
+    "image": "/images/menu/s-shirt.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for S Shirt"
+  },
+  "m-shirt": {
+    "name": "M Shirt",
+    "price": "$35.00",
+    "category": "merchandise",
+    "image": "/images/menu/m-shirt.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for M Shirt"
+  },
+  "l-shirt": {
+    "name": "L Shirt",
+    "price": "$35.00",
+    "category": "merchandise",
+    "image": "/images/menu/l-shirt.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for L Shirt"
+  },
+  "xl-shirt": {
+    "name": "XL Shirt",
+    "price": "$35.00",
+    "category": "merchandise",
+    "image": "/images/menu/xl-shirt.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for XL Shirt"
+  },
+  "xxl-shirt": {
+    "name": "XXL Shirt",
+    "price": "$35.00",
+    "category": "merchandise",
+    "image": "/images/menu/xxl-shirt.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for XXL Shirt"
+  },
+  "xxxl-shirt": {
+    "name": "XXXL Shirt",
+    "price": "$35.00",
+    "category": "merchandise",
+    "image": "/images/menu/xxxl-shirt.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for XXXL Shirt"
+  },
+  "m-sweater": {
+    "name": "M Sweater",
+    "price": "$60.00",
+    "category": "merchandise",
+    "image": "/images/menu/m-sweater.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for M Sweater"
+  },
+  "l-sweater": {
+    "name": "L Sweater",
+    "price": "$60.00",
+    "category": "merchandise",
+    "image": "/images/menu/l-sweater.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for L Sweater"
+  },
+  "xl-sweater": {
+    "name": "XL Sweater",
+    "price": "$60.00",
+    "category": "merchandise",
+    "image": "/images/menu/xl-sweater.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for XL Sweater"
+  },
+  "xxl-sweater": {
+    "name": "XXL Sweater",
+    "price": "$60.00",
+    "category": "merchandise",
+    "image": "/images/menu/xxl-sweater.jpg",
+    "source": "generated-marble-bg",
+    "description": "AI-generated image with gray marble counter background for XXL Sweater"
+  }
+}

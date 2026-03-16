@@ -3,6 +3,7 @@ import ScrollReveal from '@/components/animation/ScrollReveal';
 import TextReveal from '@/components/animation/TextReveal';
 import TiltedPhotoGrid from '@/components/animation/TiltedPhotoGrid';
 import ParallaxLayer from '@/components/animation/ParallaxLayer';
+import PageHero from '@/components/ui/PageHero';
 
 export const metadata = {
   title: 'About',
@@ -13,7 +14,7 @@ const communityPhotos = [
   { src: '/images/upscaled/still_001_0s_4x.jpg', alt: 'Brew Story tee in-store' },
   { src: '/images/upscaled/still_005_8s_4x.jpg', alt: 'Iced matcha in branded cup' },
   { src: '/images/upscaled/still_007_12s_4x.jpg', alt: 'Merch display and mirror' },
-  { src: '/images/upscaled/still_013_24s_4x.jpg', alt: 'Flowers in the shop' },
+  { src: '/images/interior_aesthetic.jpg', alt: 'Minimalist interior at Brew Story' },
   { src: '/images/upscaled/still_009_16s_4x.jpg', alt: 'Chapter One tees on display' },
   { src: '/images/upscaled/still_008_14s_4x.jpg', alt: 'Make Today Look Good tee' },
 ];
@@ -21,12 +22,12 @@ const communityPhotos = [
 export default function AboutPage() {
   return (
     <>
-      {/* Hero */}
+      <PageHero title="Our Story" />
+
       <section className="py-16 md:py-24">
         <Container>
           <ScrollReveal>
             <div className="max-w-3xl mx-auto text-center mb-20">
-              <h1 className="font-serif text-5xl md:text-7xl text-ink mb-6">Our Story</h1>
               <p className="text-olive text-lg leading-relaxed">
                 What started as a love for great coffee became a story worth telling.
               </p>
@@ -39,7 +40,7 @@ export default function AboutPage() {
               <div className="aspect-[4/5] overflow-hidden">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/images/upscaled/still_013_24s_4x.jpg"
+                  src="/images/interior_seating.jpg"
                   alt="Inside Brew Story — Huntington Beach"
                   className="w-full h-full object-cover"
                 />
@@ -71,18 +72,18 @@ export default function AboutPage() {
             <ScrollReveal direction="left" className="order-2 md:order-1">
               <div>
                 <TextReveal
-                  text="Made by hand. Printed on-site."
+                  text="Original merch. Made with intention."
                   as="h2"
                   className="font-serif text-3xl md:text-4xl text-ink mb-6"
                 />
                 <p className="text-charcoal leading-relaxed mb-4">
-                  Our merchandise isn&apos;t outsourced. Every tee, hoodie, and
-                  hat is screen printed right here in the shop. You might even
-                  catch us pressing a fresh batch while you wait for your latte.
+                  Our first batch of merch was screen printed right here in the
+                  shop during a community event. Every design is original,
+                  every piece is part of the story.
                 </p>
                 <p className="text-charcoal leading-relaxed">
-                  It&apos;s part of the experience — watching something get made
-                  with the same care we put into every cup.
+                  From tees to sweaters, our merch is designed to feel as
+                  intentional as the coffee we serve.
                 </p>
               </div>
             </ScrollReveal>

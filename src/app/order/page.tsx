@@ -1,6 +1,7 @@
 import Container from '@/components/ui/Container';
 import ScrollReveal from '@/components/animation/ScrollReveal';
 import Button from '@/components/ui/Button';
+import PageHero from '@/components/ui/PageHero';
 
 export const metadata = {
   title: 'Order Online',
@@ -10,18 +11,7 @@ export const metadata = {
 export default function OrderPage() {
   return (
     <>
-      {/* Hero Banner */}
-      <section className="relative h-64 md:h-80 overflow-hidden">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/images/generated/atmosphere_pourover.png"
-          alt="Pour-over coffee being brewed"
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-ink/40 flex items-center justify-center">
-          <h1 className="font-serif text-5xl md:text-7xl text-cream">Order Online</h1>
-        </div>
-      </section>
+      <PageHero title="Order Online" />
 
       <section className="py-16 md:py-24">
         <Container>
@@ -44,7 +34,10 @@ export default function OrderPage() {
                 <p className="text-olive mb-6">
                   Online ordering is powered by Toast. Click below to place your order.
                 </p>
-                <Button size="lg">
+                <Button
+                  href="https://order.toasttab.com/online/brew-story-16889-beach-blvd"
+                  size="lg"
+                >
                   Order on Toast
                 </Button>
               </div>

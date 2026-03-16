@@ -1,21 +1,33 @@
-import { createClient } from '@sanity/client';
-import imageUrlBuilder from '@sanity/image-url';
+import { createClient, type SanityClient } from '@sanity/client';
+import { createImageUrlBuilder } from '@sanity/image-url';
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '';
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || 'production';
 
-export const sanityClient = createClient({
-  projectId,
-  dataset,
-  apiVersion: '2026-03-15',
-  useCdn: true,
-});
+let _client: SanityClient | null = null;
 
-const builder = imageUrlBuilder(sanityClient);
+function getClient(): SanityClient {
+  if (!_client) {
+    if (!projectId) throw new Error('NEXT_PUBLIC_SANITY_PROJECT_ID not set');
+    _client = createClient({
+      projectId,
+      dataset,
+      apiVersion: '2026-03-15',
+      useCdn: true,
+    });
+  }
+  return _client;
+}
+
+export const sanityClient = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  fetch: <T = any>(query: string, params?: any): Promise<T> =>
+    getClient().fetch<T>(query, params) as Promise<T>,
+};
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function urlFor(source: any) {
-  return builder.image(source);
+  return createImageUrlBuilder({ projectId, dataset }).image(source);
 }
 
 // ── GROQ Queries ──
@@ -33,8 +45,16 @@ export const queries = {
     _id, name, "slug": slug.current, description, price, category, images, variants
   }`,
 
-  menuItems: `*[_type == "menuItem" && available == true] | order(sortOrder asc) {
-    _id, name, description, price, category, dietary, image
+  menuItems: `*[_type == "menuItem" && available == true] | order(category asc, sortOrder asc) {
+    _id, name, description, price, category, dietary, image, featured
+  }`,
+
+  allMenuItems: `*[_type == "menuItem"] | order(category asc, sortOrder asc) {
+    _id, name, description, price, category, dietary, image, featured, available
+  }`,
+
+  featuredMenuItems: `*[_type == "menuItem" && available == true && featured == true] | order(sortOrder asc) {
+    _id, name, description, price, category, image
   }`,
 
   teamMembers: `*[_type == "teamMember"] | order(sortOrder asc) {

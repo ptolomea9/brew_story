@@ -1,105 +1,56 @@
-import Container from '@/components/ui/Container';
-import ScrollReveal from '@/components/animation/ScrollReveal';
-import Badge from '@/components/ui/Badge';
+import { sanityClient, queries } from '@/lib/sanity';
+import MenuContent from '@/components/menu/MenuContent';
+import menuJson from '@/data/menu.json';
 
-const menuCategories = [
-  {
-    name: 'Espresso',
-    items: [
-      { name: 'Espresso', price: '$3.50', tags: [] },
-      { name: 'Americano', price: '$4.50', tags: [] },
-      { name: 'Latte', price: '$5.50', tags: [] },
-      { name: 'Cappuccino', price: '$5.50', tags: [] },
-      { name: 'Mocha', price: '$6.00', tags: [] },
-      { name: 'Cortado', price: '$4.50', tags: [] },
-    ],
-  },
-  {
-    name: 'Specialty',
-    items: [
-      { name: 'Matcha Latte', price: '$6.50', tags: ['popular'] },
-      { name: 'Chai Latte', price: '$5.50', tags: [] },
-      { name: 'Lavender Latte', price: '$6.50', tags: ['new'] },
-      { name: 'Honey Oat Latte', price: '$6.50', tags: ['popular'] },
-    ],
-  },
-  {
-    name: 'Cold Drinks',
-    items: [
-      { name: 'Cold Brew', price: '$5.00', tags: [] },
-      { name: 'Iced Latte', price: '$5.50', tags: [] },
-      { name: 'Iced Matcha', price: '$6.50', tags: ['popular'] },
-      { name: 'Lemonade', price: '$4.00', tags: [] },
-    ],
-  },
-  {
-    name: 'Pastries',
-    items: [
-      { name: 'Croissant', price: '$4.00', tags: [] },
-      { name: 'Banana Bread', price: '$4.50', tags: ['vegan'] },
-      { name: 'Blueberry Muffin', price: '$4.00', tags: [] },
-      { name: 'Cookie', price: '$3.50', tags: [] },
-    ],
-  },
-];
+export interface MenuItem {
+  _id: string;
+  name: string;
+  description?: string;
+  price: number;
+  category: string;
+  dietary?: string[];
+  featured?: boolean;
+  image?: { asset: { _ref: string } };
+}
+
+// Category display name -> slug mapping for JSON fallback
+const catSlugMap: Record<string, string> = {
+  'Coffee (Hot)': 'coffee-hot',
+  'Coffee (Iced)': 'coffee-iced',
+  'Signature': 'signature',
+  'Matcha': 'matcha',
+  'Hojicha': 'hojicha',
+  'Specialty Tea': 'specialty-tea',
+  'Citrus Sparklers': 'citrus-sparklers',
+  'Non-Coffee': 'non-coffee',
+  'Pastries': 'pastries',
+  'Sandwiches': 'sandwiches',
+  'Merchandise': 'merchandise',
+};
 
 export const metadata = {
   title: 'Menu',
   description: 'Explore our craft coffee menu, specialty drinks, and fresh pastries at Brew Story.',
 };
 
-export default function MenuPage() {
-  return (
-    <>
-    {/* Hero Banner */}
-    <section className="relative h-64 md:h-80 overflow-hidden">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src="/images/generated/hero_latte.png"
-        alt="Craft roasted coffee"
-        className="w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-ink/30 flex items-center justify-center">
-        <h1 className="font-serif text-5xl md:text-7xl text-cream">Menu</h1>
-      </div>
-    </section>
+export const revalidate = 60;
 
-    <section className="py-16 md:py-24">
-      <Container>
-        <ScrollReveal>
-          <div className="text-center mb-16">
-            <p className="text-olive max-w-md mx-auto">
-              Craft roasted daily. Made with care.
-            </p>
-          </div>
-        </ScrollReveal>
+export default async function MenuPage() {
+  let items: MenuItem[];
+  try {
+    items = await sanityClient.fetch(queries.menuItems);
+    if (!items || items.length === 0) throw new Error('empty');
+  } catch {
+    // Fallback to static JSON from Toast scrape
+    items = menuJson
+      .filter((i: { in_stock: boolean }) => i.in_stock)
+      .map((i: { name: string; price: number; category: string; in_stock: boolean }, idx: number) => ({
+        _id: `fallback-${idx}`,
+        name: i.name,
+        price: i.price,
+        category: catSlugMap[i.category] || 'signature',
+      }));
+  }
 
-        <div className="max-w-3xl mx-auto space-y-16">
-          {menuCategories.map((category, ci) => (
-            <ScrollReveal key={category.name} delay={ci * 0.1}>
-              <div>
-                <h2 className="font-serif text-3xl text-ink mb-6 pb-3 border-b border-sage/40">
-                  {category.name}
-                </h2>
-                <div className="space-y-4">
-                  {category.items.map((item) => (
-                    <div key={item.name} className="flex items-center justify-between py-2">
-                      <div className="flex items-center gap-3">
-                        <span className="text-charcoal">{item.name}</span>
-                        {item.tags.map((tag) => (
-                          <Badge key={tag} variant="accent">{tag}</Badge>
-                        ))}
-                      </div>
-                      <span className="text-olive text-sm">{item.price}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </ScrollReveal>
-          ))}
-        </div>
-      </Container>
-    </section>
-    </>
-  );
+  return <MenuContent items={items} />;
 }

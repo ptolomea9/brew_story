@@ -1,0 +1,901 @@
+- generic [ref=e1]:
+  - generic:
+    - generic:
+      - button [active] [ref=e1284] [cursor=pointer]:
+        - img [ref=e6]
+      - status [ref=e28]: Preferences updated
+  - generic [ref=e29]:
+    - link "Skip to Main content" [ref=e30] [cursor=pointer]:
+      - /url: "#main"
+    - generic [ref=e32]:
+      - navigation "Main navigation" [ref=e33]:
+        - generic [ref=e35]:
+          - list [ref=e36]:
+            - listitem [ref=e37]:
+              - link "Brew Story" [ref=e39] [cursor=pointer]:
+                - /url: /online/brew-story-16889-beach-blvd
+                - img "Brew Story" [ref=e41]
+          - list:
+            - list
+          - button "Cart with 0 items" [ref=e42] [cursor=pointer]:
+            - generic [ref=e43]:
+              - img [ref=e44]
+              - generic [ref=e46]: "0"
+          - button "Sign in" [ref=e47] [cursor=pointer]
+      - generic [ref=e51]:
+        - button "Only accepting scheduled orders" [ref=e52] [cursor=pointer]:
+          - img [ref=e54]
+          - generic [ref=e57]: Only accepting scheduled orders
+        - generic [ref=e60]:
+          - generic [ref=e61]:
+            - heading "Brew Story 16889 Beach Blvd" [level=2] [ref=e62]
+            - generic [ref=e64]: 16889 Beach Blvd, Huntington Beach, CA
+          - generic [ref=e65]:
+            - generic [ref=e67]:
+              - img [ref=e69]
+              - generic [ref=e71]: Pickup Only
+            - generic [ref=e72]:
+              - button "Pickup from 16889 Beach Blvd, Huntington Beach, CA" [disabled]:
+                - generic:
+                  - generic:
+                    - img
+                  - generic:
+                    - text: Pickup from
+                    - strong: 16889 Beach Blvd, Huntington Beach, CA
+              - button "Schedule your order for later Open fulfillment details" [ref=e73] [cursor=pointer]:
+                - generic [ref=e74]:
+                  - img [ref=e76]
+                  - generic [ref=e79]: Schedule your order for later
+                - img "Open fulfillment details" [ref=e80]:
+                  - img [ref=e81]
+      - main "menu" [ref=e83]:
+        - generic [ref=e85]:
+          - navigation "Menu navigation" [ref=e89]:
+            - generic [ref=e92]:
+              - listbox "Coffee" [ref=e94] [cursor=pointer]:
+                - generic [ref=e95]: Coffee
+                - img "View menu groups" [ref=e96]:
+                  - img [ref=e97]
+              - listbox "Matcha" [ref=e100] [cursor=pointer]:
+                - generic [ref=e101]: Matcha
+                - img "View menu groups" [ref=e102]:
+                  - img [ref=e103]
+              - listbox "Specialty Tea" [ref=e106] [cursor=pointer]:
+                - generic [ref=e107]: Specialty Tea
+                - img "View menu groups" [ref=e108]:
+                  - img [ref=e109]
+              - listbox "Citrus Sparklers (non-caffeinated)" [ref=e112] [cursor=pointer]:
+                - generic [ref=e113]: Citrus Sparklers (non-caffeinated)
+                - img "View menu groups" [ref=e114]:
+                  - img [ref=e115]
+              - listbox "Pastries" [ref=e118] [cursor=pointer]:
+                - generic [ref=e119]: Pastries
+                - img "View menu groups" [ref=e120]:
+                  - img [ref=e121]
+              - listbox "Toasts & Sandos" [ref=e124] [cursor=pointer]:
+                - generic [ref=e125]: Toasts & Sandos
+                - img "View menu groups" [ref=e126]:
+                  - img [ref=e127]
+              - listbox "Kids" [ref=e130] [cursor=pointer]:
+                - generic [ref=e131]: Kids
+                - img "View menu groups" [ref=e132]:
+                  - img [ref=e133]
+              - listbox "Merch" [ref=e136] [cursor=pointer]:
+                - generic [ref=e137]: Merch
+                - img "View menu groups" [ref=e138]:
+                  - img [ref=e139]
+            - generic [ref=e142]:
+              - img [ref=e145]
+              - searchbox "Search menu items" [ref=e147]
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - tabpanel [ref=e155]:
+                - heading "Featured Items" [level=3] [ref=e157]
+                - list [ref=e158]:
+                  - listitem [ref=e159]:
+                    - link "Banana MATCHA Latte $6.75" [ref=e160] [cursor=pointer]:
+                      - /url: /online/brew-story-16889-beach-blvd/item-banana-matcha-latte_e0d2f05d-248c-4f9f-a76c-f65e63fa29b9
+                      - generic [ref=e161]:
+                        - heading "Banana MATCHA Latte" [level=3] [ref=e163]
+                        - generic [ref=e165]: $6.75
+                    - button [ref=e167] [cursor=pointer]:
+                      - img [ref=e169]
+                  - listitem [ref=e171]:
+                    - link "MaMa Latte Matcha latte with matcha cream top. $8.50" [ref=e172] [cursor=pointer]:
+                      - /url: /online/brew-story-16889-beach-blvd/item-mama-latte_f0a996ae-9593-4746-b574-a58b9b5f8a73
+                      - generic [ref=e173]:
+                        - generic [ref=e174]:
+                          - heading "MaMa Latte" [level=3] [ref=e175]
+                          - generic [ref=e176]: Matcha latte with matcha cream top.
+                        - generic [ref=e178]: $8.50
+                    - button [ref=e180] [cursor=pointer]:
+                      - img [ref=e182]
+                  - listitem [ref=e184]:
+                    - link "Cookie Butter Cream Top Matcha Latte $7.25" [ref=e185] [cursor=pointer]:
+                      - /url: /online/brew-story-16889-beach-blvd/item-cookie-butter-cream-top-matcha-latte_23992c9c-d5c2-4847-907d-687f850f1f98
+                      - generic [ref=e186]:
+                        - heading "Cookie Butter Cream Top Matcha Latte" [level=3] [ref=e188]
+                        - generic [ref=e190]: $7.25
+                    - button [ref=e192] [cursor=pointer]:
+                      - img [ref=e194]
+              - separator [ref=e197]
+            - generic [ref=e198]:
+              - tabpanel "Coffee" [ref=e199]:
+                - generic [ref=e200]:
+                  - heading "Coffee" [level=2] [ref=e202]
+                  - generic [ref=e203]:
+                    - tabpanel [ref=e205]:
+                      - heading "Hot Coffee" [level=3] [ref=e207]
+                      - list [ref=e208]:
+                        - listitem [ref=e209]:
+                          - link "Morning Drip Regular OUT OF STOCK $3.25" [ref=e210]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-morning-drip-regular_9547f371-a1c2-4346-b6a9-9aee0b46ed2f
+                            - generic [ref=e211]:
+                              - heading "Morning Drip Regular" [level=3] [ref=e213]
+                              - generic [ref=e214]:
+                                - generic [ref=e216]: OUT OF STOCK
+                                - generic [ref=e217]: $3.25
+                        - listitem [ref=e218]:
+                          - link "Morning Drip Large OUT OF STOCK $3.75" [ref=e219]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-morning-drip-large_1eead342-dea8-4448-98ef-0f096609c555
+                            - generic [ref=e220]:
+                              - heading "Morning Drip Large" [level=3] [ref=e222]
+                              - generic [ref=e223]:
+                                - generic [ref=e225]: OUT OF STOCK
+                                - generic [ref=e226]: $3.75
+                        - listitem [ref=e227]:
+                          - link "Hot Americano $4.00" [ref=e228] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-hot-americano_09584da1-838c-4563-be2f-cb64285d6f7d
+                            - generic [ref=e229]:
+                              - heading "Hot Americano" [level=3] [ref=e231]
+                              - generic [ref=e233]: $4.00
+                          - button [ref=e235] [cursor=pointer]:
+                            - img [ref=e237]
+                        - listitem [ref=e239]:
+                          - link "Cappuccino $5.00" [ref=e240] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-cappuccino_504ca8c3-4ac3-4229-9c1b-60053891d605
+                            - generic [ref=e241]:
+                              - heading "Cappuccino" [level=3] [ref=e243]
+                              - generic [ref=e245]: $5.00
+                          - button [ref=e247] [cursor=pointer]:
+                            - img [ref=e249]
+                        - listitem [ref=e251]:
+                          - link "Flat White $5.00" [ref=e252] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-flat-white_bcce484d-d25c-40d7-9829-31d5da1875b1
+                            - generic [ref=e253]:
+                              - heading "Flat White" [level=3] [ref=e255]
+                              - generic [ref=e257]: $5.00
+                          - button [ref=e259] [cursor=pointer]:
+                            - img [ref=e261]
+                        - listitem [ref=e263]:
+                          - link "Cortado $4.50" [ref=e264] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-cortado_1924b935-5ce0-458d-8271-22d1f1c97f32
+                            - generic [ref=e265]:
+                              - heading "Cortado" [level=3] [ref=e267]
+                              - generic [ref=e269]: $4.50
+                          - button [ref=e271] [cursor=pointer]:
+                            - img [ref=e273]
+                        - listitem [ref=e275]:
+                          - link "Espresso $4.00" [ref=e276] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-espresso_409b676d-b393-4e57-a652-08ad155e212e
+                            - generic [ref=e277]:
+                              - heading "Espresso" [level=3] [ref=e279]
+                              - generic [ref=e281]: $4.00
+                          - button [ref=e283] [cursor=pointer]:
+                            - img [ref=e285]
+                        - listitem [ref=e287]:
+                          - link "Pour Over $5.75" [ref=e288] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-pour-over_ea56077e-f48c-4ed8-8972-52250e8dd805
+                            - generic [ref=e289]:
+                              - heading "Pour Over" [level=3] [ref=e291]
+                              - generic [ref=e293]: $5.75
+                          - button [ref=e295] [cursor=pointer]:
+                            - img [ref=e297]
+                        - listitem [ref=e299]:
+                          - link "Hot Latte $5.00" [ref=e300] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-hot-latte_e73e66d3-e5a9-4f9b-8620-7a5535633b20
+                            - generic [ref=e301]:
+                              - heading "Hot Latte" [level=3] [ref=e303]
+                              - generic [ref=e305]: $5.00
+                          - button [ref=e307] [cursor=pointer]:
+                            - img [ref=e309]
+                        - listitem [ref=e311]:
+                          - link "Hot Vanilla Latte $5.50" [ref=e312] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-hot-vanilla-latte_73f5f682-71d4-41b9-b7a3-2ee893b83e8d
+                            - generic [ref=e313]:
+                              - heading "Hot Vanilla Latte" [level=3] [ref=e315]
+                              - generic [ref=e317]: $5.50
+                          - button [ref=e319] [cursor=pointer]:
+                            - img [ref=e321]
+                        - listitem [ref=e323]:
+                          - link "Hot Spanish Latte $5.75" [ref=e324] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-hot-spanish-latte_b5006f86-306b-4886-80bb-edd70ad8284d
+                            - generic [ref=e325]:
+                              - heading "Hot Spanish Latte" [level=3] [ref=e327]
+                              - generic [ref=e329]: $5.75
+                          - button [ref=e331] [cursor=pointer]:
+                            - img [ref=e333]
+                        - listitem [ref=e335]:
+                          - link "Traditional Macchiato $4.00" [ref=e336] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-traditional-macchiato_37ba1810-fc06-4417-9675-c0cc3dad7d7a
+                            - generic [ref=e337]:
+                              - heading "Traditional Macchiato" [level=3] [ref=e339]
+                              - generic [ref=e341]: $4.00
+                          - button [ref=e343] [cursor=pointer]:
+                            - img [ref=e345]
+                        - listitem [ref=e347]:
+                          - link "Hot Mocha Latte $5.50" [ref=e348] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-hot-mocha-latte_397b029a-6ac1-4874-bdba-bbbe429da4f1
+                            - generic [ref=e349]:
+                              - heading "Hot Mocha Latte" [level=3] [ref=e351]
+                              - generic [ref=e353]: $5.50
+                          - button [ref=e355] [cursor=pointer]:
+                            - img [ref=e357]
+                    - tabpanel [ref=e360]:
+                      - heading "Iced Coffee Drinks" [level=3] [ref=e362]
+                      - list [ref=e363]:
+                        - listitem [ref=e364]:
+                          - link "Iced Latte $5.00" [ref=e365] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-iced-latte_7b388f64-59b9-4c4c-93b1-8cc11554795c
+                            - generic [ref=e366]:
+                              - heading "Iced Latte" [level=3] [ref=e368]
+                              - generic [ref=e370]: $5.00
+                          - button [ref=e372] [cursor=pointer]:
+                            - img [ref=e374]
+                        - listitem [ref=e376]:
+                          - link "Banana Cream COFFEE Latte $6.75" [ref=e377] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-banana-cream-coffee-latte_a0cdb881-0a6e-4e35-977c-8eb10110c009
+                            - generic [ref=e378]:
+                              - heading "Banana Cream COFFEE Latte" [level=3] [ref=e380]
+                              - generic [ref=e382]: $6.75
+                          - button [ref=e384] [cursor=pointer]:
+                            - img [ref=e386]
+                        - listitem [ref=e388]:
+                          - link "Iced Vanilla Latte $5.50" [ref=e389] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-iced-vanilla-latte_6e36cea0-a216-4118-82a4-eee158ce1a3f
+                            - generic [ref=e390]:
+                              - heading "Iced Vanilla Latte" [level=3] [ref=e392]
+                              - generic [ref=e394]: $5.50
+                          - button [ref=e396] [cursor=pointer]:
+                            - img [ref=e398]
+                        - listitem [ref=e400]:
+                          - link "Tiramisu Latte $7.50" [ref=e401] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-tiramisu-latte_b7677862-cd4f-461a-93ee-9af306b2525f
+                            - generic [ref=e402]:
+                              - heading "Tiramisu Latte" [level=3] [ref=e404]
+                              - generic [ref=e406]: $7.50
+                          - button [ref=e408] [cursor=pointer]:
+                            - img [ref=e410]
+                        - listitem [ref=e412]:
+                          - link "Sweet Corn Latte $6.50" [ref=e413] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-sweet-corn-latte_a8b7f9aa-d939-4e9a-9195-c77116ef014e
+                            - generic [ref=e414]:
+                              - heading "Sweet Corn Latte" [level=3] [ref=e416]
+                              - generic [ref=e418]: $6.50
+                          - button [ref=e420] [cursor=pointer]:
+                            - img [ref=e422]
+                        - listitem [ref=e424]:
+                          - link "Coconut Cloud Latte $6.75" [ref=e425] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-coconut-cloud-latte_75cc55f2-844b-4e5e-b899-a5abe08867ed
+                            - generic [ref=e426]:
+                              - heading "Coconut Cloud Latte" [level=3] [ref=e428]
+                              - generic [ref=e430]: $6.75
+                          - button [ref=e432] [cursor=pointer]:
+                            - img [ref=e434]
+                        - listitem [ref=e436]:
+                          - link "Iced Brown Sugar Latte $5.50" [ref=e437] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-iced-brown-sugar-latte_c02995ef-2bf5-4e28-a7bc-c2c0bc8bea1b
+                            - generic [ref=e438]:
+                              - heading "Iced Brown Sugar Latte" [level=3] [ref=e440]
+                              - generic [ref=e442]: $5.50
+                          - button [ref=e444] [cursor=pointer]:
+                            - img [ref=e446]
+                        - listitem [ref=e448]:
+                          - link "Iced Spanish Latte $5.75" [ref=e449] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-iced-spanish-latte_f77d65cd-33fa-4f50-baad-c69dd73cf8e3
+                            - generic [ref=e450]:
+                              - heading "Iced Spanish Latte" [level=3] [ref=e452]
+                              - generic [ref=e454]: $5.75
+                          - button [ref=e456] [cursor=pointer]:
+                            - img [ref=e458]
+                        - listitem [ref=e460]:
+                          - link "Iced Mocha Latte $5.50" [ref=e461] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-iced-mocha-latte_bcb285ba-15f2-4f5b-8e39-bdce2d6a30b1
+                            - generic [ref=e462]:
+                              - heading "Iced Mocha Latte" [level=3] [ref=e464]
+                              - generic [ref=e466]: $5.50
+                          - button [ref=e468] [cursor=pointer]:
+                            - img [ref=e470]
+                        - listitem [ref=e472]:
+                          - link "Iced Americano $4.00" [ref=e473] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-iced-americano_0fc5a6bf-2277-4971-bdd5-f06e3b126070
+                            - generic [ref=e474]:
+                              - heading "Iced Americano" [level=3] [ref=e476]
+                              - generic [ref=e478]: $4.00
+                          - button [ref=e480] [cursor=pointer]:
+                            - img [ref=e482]
+                        - listitem [ref=e484]:
+                          - link "Tiramisu Americano $6.75" [ref=e485] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-tiramisu-americano_092f524c-c392-4303-821a-7b8319d82525
+                            - generic [ref=e486]:
+                              - heading "Tiramisu Americano" [level=3] [ref=e488]
+                              - generic [ref=e490]: $6.75
+                          - button [ref=e492] [cursor=pointer]:
+                            - img [ref=e494]
+                        - listitem [ref=e496]:
+                          - link "Cream Top Americano $6.00" [ref=e497] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-cream-top-americano_9f16f48d-073b-42e0-ac57-e9cb3ff04a2b
+                            - generic [ref=e498]:
+                              - heading "Cream Top Americano" [level=3] [ref=e500]
+                              - generic [ref=e502]: $6.00
+                          - button [ref=e504] [cursor=pointer]:
+                            - img [ref=e506]
+                        - listitem [ref=e508]:
+                          - link "Iced Lavender Butterfly Pea Latte $5.75" [ref=e509] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-iced-lavender-butterfly-pea-latte_066ebb70-4c59-420c-9688-10dbb0dc0a2d
+                            - generic [ref=e510]:
+                              - heading "Iced Lavender Butterfly Pea Latte" [level=3] [ref=e512]
+                              - generic [ref=e514]: $5.75
+                          - button [ref=e516] [cursor=pointer]:
+                            - img [ref=e518]
+                        - listitem [ref=e520]:
+                          - link "Salted Caramel Cream Topped Latte $6.75" [ref=e521] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-salted-caramel-cream-topped-latte_b408b8dd-0429-4e97-b59d-2275cb35d6dd
+                            - generic [ref=e522]:
+                              - heading "Salted Caramel Cream Topped Latte" [level=3] [ref=e524]
+                              - generic [ref=e526]: $6.75
+                          - button [ref=e528] [cursor=pointer]:
+                            - img [ref=e530]
+                        - listitem [ref=e532]:
+                          - link "Fine Robusta Iced Coffee $5.50" [ref=e533] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-fine-robusta-iced-coffee_7b61c8b2-906a-4b01-9da1-04c6be43605b
+                            - generic [ref=e534]:
+                              - heading "Fine Robusta Iced Coffee" [level=3] [ref=e536]
+                              - generic [ref=e538]: $5.50
+                          - button [ref=e540] [cursor=pointer]:
+                            - img [ref=e542]
+                        - listitem [ref=e544]:
+                          - link "The Yoda Iced Latte with Matcha Cream top. $8.00" [ref=e545] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-the-yoda_72717aaf-8a83-418c-a985-393152fdb63d
+                            - generic [ref=e546]:
+                              - generic [ref=e547]:
+                                - heading "The Yoda" [level=3] [ref=e548]
+                                - generic [ref=e549]: Iced Latte with Matcha Cream top.
+                              - generic [ref=e551]: $8.00
+                          - button [ref=e553] [cursor=pointer]:
+                            - img [ref=e555]
+                        - listitem [ref=e557]:
+                          - link "Yuzu Espresso Tonic OUT OF STOCK $6.75" [ref=e558]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-yuzu-espresso-tonic_2b2d0d49-2f28-48c4-9afe-1f282c019127
+                            - generic [ref=e559]:
+                              - heading "Yuzu Espresso Tonic" [level=3] [ref=e561]
+                              - generic [ref=e562]:
+                                - generic [ref=e564]: OUT OF STOCK
+                                - generic [ref=e565]: $6.75
+                        - listitem [ref=e566]:
+                          - link "Creme Brulee Latte $7.25" [ref=e567] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-creme-brulee-latte_4ec4b5f3-410c-4e7f-b38c-238363b5932c
+                            - generic [ref=e568]:
+                              - heading "Creme Brulee Latte" [level=3] [ref=e570]
+                              - generic [ref=e572]: $7.25
+                          - button [ref=e574] [cursor=pointer]:
+                            - img [ref=e576]
+                        - listitem [ref=e578]:
+                          - link "Cookie Butter Cream Top Latte $7.25" [ref=e579] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-cookie-butter-cream-top-latte_4f661a11-64a6-4851-8eb7-a4d94597d072
+                            - generic [ref=e580]:
+                              - heading "Cookie Butter Cream Top Latte" [level=3] [ref=e582]
+                              - generic [ref=e584]: $7.25
+                          - button [ref=e586] [cursor=pointer]:
+                            - img [ref=e588]
+                        - listitem [ref=e590]:
+                          - link "Cold Brew OUT OF STOCK $5.50" [ref=e591]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-cold-brew_eec31532-ca0b-4451-94a9-ce0c85492457
+                            - generic [ref=e592]:
+                              - heading "Cold Brew" [level=3] [ref=e594]
+                              - generic [ref=e595]:
+                                - generic [ref=e597]: OUT OF STOCK
+                                - generic [ref=e598]: $5.50
+                  - separator [ref=e599]
+              - tabpanel "Matcha" [ref=e600]:
+                - generic [ref=e601]:
+                  - heading "Matcha" [level=2] [ref=e603]
+                  - tabpanel [ref=e606]:
+                    - heading "Matcha Drinks" [level=3] [ref=e608]
+                    - list [ref=e609]:
+                      - listitem [ref=e610]:
+                        - link "Banana MATCHA Latte $6.75" [ref=e611] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-banana-matcha-latte_e0d2f05d-248c-4f9f-a76c-f65e63fa29b9
+                          - generic [ref=e612]:
+                            - heading "Banana MATCHA Latte" [level=3] [ref=e614]
+                            - generic [ref=e616]: $6.75
+                        - button [ref=e618] [cursor=pointer]:
+                          - img [ref=e620]
+                      - listitem [ref=e622]:
+                        - link "Sweet Corn Matcha Latte $6.75" [ref=e623] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-sweet-corn-matcha-latte_159d45a7-fe39-4ee3-bc91-aff944e2440d
+                          - generic [ref=e624]:
+                            - heading "Sweet Corn Matcha Latte" [level=3] [ref=e626]
+                            - generic [ref=e628]: $6.75
+                        - button [ref=e630] [cursor=pointer]:
+                          - img [ref=e632]
+                      - listitem [ref=e634]:
+                        - link "MaMa Latte Matcha latte with matcha cream top. $8.50" [ref=e635] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-mama-latte_f0a996ae-9593-4746-b574-a58b9b5f8a73
+                          - generic [ref=e636]:
+                            - generic [ref=e637]:
+                              - heading "MaMa Latte" [level=3] [ref=e638]
+                              - generic [ref=e639]: Matcha latte with matcha cream top.
+                            - generic [ref=e641]: $8.50
+                        - button [ref=e643] [cursor=pointer]:
+                          - img [ref=e645]
+                      - listitem [ref=e647]:
+                        - link "Coconut Cloud Matcha $6.75" [ref=e648] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-coconut-cloud-matcha_b98fe709-6e31-4c4e-9500-bc4a18b505f1
+                          - generic [ref=e649]:
+                            - heading "Coconut Cloud Matcha" [level=3] [ref=e651]
+                            - generic [ref=e653]: $6.75
+                        - button [ref=e655] [cursor=pointer]:
+                          - img [ref=e657]
+                      - listitem [ref=e659]:
+                        - link "Strawberry Matcha Latte $6.75" [ref=e660] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-strawberry-matcha-latte_4734b86b-25d5-42db-9ec4-4e8caf314df3
+                          - generic [ref=e661]:
+                            - heading "Strawberry Matcha Latte" [level=3] [ref=e663]
+                            - generic [ref=e665]: $6.75
+                        - button [ref=e667] [cursor=pointer]:
+                          - img [ref=e669]
+                      - listitem [ref=e671]:
+                        - link "Matcha Latte $5.50" [ref=e672] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-matcha-latte_4b910169-be34-4b39-ab3a-f84b076bdce9
+                          - generic [ref=e673]:
+                            - heading "Matcha Latte" [level=3] [ref=e675]
+                            - generic [ref=e677]: $5.50
+                        - button [ref=e679] [cursor=pointer]:
+                          - img [ref=e681]
+                      - listitem [ref=e683]:
+                        - link "Lavender Butterfly Pea Matcha Latte $6.25" [ref=e684] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-lavender-butterfly-pea-matcha-latte_f56c5ad3-0ae8-4e89-a590-d245e6dc728a
+                          - generic [ref=e685]:
+                            - heading "Lavender Butterfly Pea Matcha Latte" [level=3] [ref=e687]
+                            - generic [ref=e689]: $6.25
+                        - button [ref=e691] [cursor=pointer]:
+                          - img [ref=e693]
+                      - listitem [ref=e695]:
+                        - link "Hojicha $5.50" [ref=e696] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-hojicha_8c104163-e18f-45de-a411-47884cf88526
+                          - generic [ref=e697]:
+                            - heading "Hojicha" [level=3] [ref=e699]
+                            - generic [ref=e701]: $5.50
+                        - button [ref=e703] [cursor=pointer]:
+                          - img [ref=e705]
+                      - listitem [ref=e707]:
+                        - link "Creme Brulee Matcha Latte $7.25" [ref=e708] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-creme-brulee-matcha-latte_6faef78c-268d-4a83-8a2a-bd50f5727072
+                          - generic [ref=e709]:
+                            - heading "Creme Brulee Matcha Latte" [level=3] [ref=e711]
+                            - generic [ref=e713]: $7.25
+                        - button [ref=e715] [cursor=pointer]:
+                          - img [ref=e717]
+                      - listitem [ref=e719]:
+                        - link "Cookie Butter Cream Top Matcha Latte $7.25" [ref=e720] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-cookie-butter-cream-top-matcha-latte_23992c9c-d5c2-4847-907d-687f850f1f98
+                          - generic [ref=e721]:
+                            - heading "Cookie Butter Cream Top Matcha Latte" [level=3] [ref=e723]
+                            - generic [ref=e725]: $7.25
+                        - button [ref=e727] [cursor=pointer]:
+                          - img [ref=e729]
+                      - listitem [ref=e731]:
+                        - link "Strawberry SHORTCAKE Matcha Latte OUT OF STOCK $6.75" [ref=e732]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-strawberry-shortcake-matcha-latte_292d5635-da38-4603-ba55-a5b2e7b08661
+                          - generic [ref=e733]:
+                            - heading "Strawberry SHORTCAKE Matcha Latte" [level=3] [ref=e735]
+                            - generic [ref=e736]:
+                              - generic [ref=e738]: OUT OF STOCK
+                              - generic [ref=e739]: $6.75
+                      - listitem [ref=e740]:
+                        - link "Coconut Water Matcha Cream Top $6.75" [ref=e741] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-coconut-water-matcha-cream-top_9491dfec-ab00-4859-8ff3-3c0c69a5b293
+                          - generic [ref=e742]:
+                            - heading "Coconut Water Matcha Cream Top" [level=3] [ref=e744]
+                            - generic [ref=e746]: $6.75
+                        - button [ref=e748] [cursor=pointer]:
+                          - img [ref=e750]
+                      - listitem [ref=e752]:
+                        - link "Sparkling Yuzu Matcha Sparkling Water, Yuzu Citrus, Matcha $6.75" [ref=e753] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-sparkling-yuzu-matcha_8b1f37cc-acb7-48d9-b60b-185efed15422
+                          - generic [ref=e754]:
+                            - generic [ref=e755]:
+                              - heading "Sparkling Yuzu Matcha" [level=3] [ref=e756]
+                              - generic [ref=e757]: Sparkling Water, Yuzu Citrus, Matcha
+                            - generic [ref=e759]: $6.75
+                        - button [ref=e761] [cursor=pointer]:
+                          - img [ref=e763]
+                      - listitem [ref=e765]:
+                        - link "Pumpkin Pie Matcha Latte OUT OF STOCK $6.75" [ref=e766]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-pumpkin-pie-matcha-latte_59510500-df8d-4a38-b131-6797d1dea414
+                          - generic [ref=e767]:
+                            - heading "Pumpkin Pie Matcha Latte" [level=3] [ref=e769]
+                            - generic [ref=e770]:
+                              - generic [ref=e772]: OUT OF STOCK
+                              - generic [ref=e773]: $6.75
+                  - separator [ref=e774]
+              - tabpanel "Specialty Tea" [ref=e775]:
+                - generic [ref=e776]:
+                  - heading "Specialty Tea" [level=2] [ref=e778]
+                  - tabpanel [ref=e781]:
+                    - list [ref=e782]:
+                      - listitem [ref=e783]:
+                        - link "Masala Chai Latte $5.50" [ref=e784] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-masala-chai-latte_cc15abf3-2b86-49ec-9257-6a01ca503b01
+                          - generic [ref=e785]:
+                            - heading "Masala Chai Latte" [level=3] [ref=e787]
+                            - generic [ref=e789]: $5.50
+                        - button [ref=e791] [cursor=pointer]:
+                          - img [ref=e793]
+                      - listitem [ref=e795]:
+                        - link "Earl Grey Blend $4.00" [ref=e796] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-earl-grey-blend_100d9342-fa15-4ada-b6d9-aa6f0a3f6049
+                          - generic [ref=e797]:
+                            - heading "Earl Grey Blend" [level=3] [ref=e799]
+                            - generic [ref=e801]: $4.00
+                        - button [ref=e803] [cursor=pointer]:
+                          - img [ref=e805]
+                      - listitem [ref=e807]:
+                        - link "Phoenix Jasmine Pearl OUT OF STOCK $5.00" [ref=e808]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-phoenix-jasmine-pearl_9141298c-5288-4302-b13b-6de908fc2913
+                          - generic [ref=e809]:
+                            - heading "Phoenix Jasmine Pearl" [level=3] [ref=e811]
+                            - generic [ref=e812]:
+                              - generic [ref=e814]: OUT OF STOCK
+                              - generic [ref=e815]: $5.00
+                      - listitem [ref=e816]:
+                        - link "Peach Oolong OUT OF STOCK $4.00" [ref=e817]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-peach-oolong_79a861e2-f588-4ac2-9615-13152dde26ea
+                          - generic [ref=e818]:
+                            - heading "Peach Oolong" [level=3] [ref=e820]
+                            - generic [ref=e821]:
+                              - generic [ref=e823]: OUT OF STOCK
+                              - generic [ref=e824]: $4.00
+                      - listitem [ref=e825]:
+                        - link "Wild Strawberry OUT OF STOCK $4.00" [ref=e826]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-wild-strawberry_fbc8b2f1-bcd2-4ee2-935a-8141ebf9c361
+                          - generic [ref=e827]:
+                            - heading "Wild Strawberry" [level=3] [ref=e829]
+                            - generic [ref=e830]:
+                              - generic [ref=e832]: OUT OF STOCK
+                              - generic [ref=e833]: $4.00
+                  - separator [ref=e834]
+              - tabpanel "Citrus Sparklers (non-caffeinated)" [ref=e835]:
+                - generic [ref=e836]:
+                  - heading "Citrus Sparklers (non-caffeinated)" [level=2] [ref=e838]
+                  - tabpanel [ref=e841]:
+                    - heading "Citrus Sparklers" [level=3] [ref=e843]
+                    - list [ref=e844]:
+                      - listitem [ref=e845]:
+                        - link "Strawberry Citrus Sparkler Fresh Strawberries, Yuzu, Sparkling water OUT OF STOCK $4.95" [ref=e846]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-strawberry-citrus-sparkler_a4cc31b9-116e-4976-ac06-9e00271ad824
+                          - generic [ref=e847]:
+                            - generic [ref=e848]:
+                              - heading "Strawberry Citrus Sparkler" [level=3] [ref=e849]
+                              - generic [ref=e850]: Fresh Strawberries, Yuzu, Sparkling water
+                            - generic [ref=e851]:
+                              - generic [ref=e853]: OUT OF STOCK
+                              - generic [ref=e854]: $4.95
+                      - listitem [ref=e855]:
+                        - link "Yuzu Citrus Sparkler OUT OF STOCK $4.95" [ref=e856]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-yuzu-citrus-sparkler_4efde8b6-c2c1-47f3-a719-7779f6663999
+                          - generic [ref=e857]:
+                            - heading "Yuzu Citrus Sparkler" [level=3] [ref=e859]
+                            - generic [ref=e860]:
+                              - generic [ref=e862]: OUT OF STOCK
+                              - generic [ref=e863]: $4.95
+                  - separator [ref=e864]
+              - tabpanel "Pastries" [ref=e865]:
+                - generic [ref=e866]:
+                  - heading "Pastries" [level=2] [ref=e868]
+                  - tabpanel [ref=e871]:
+                    - list [ref=e872]:
+                      - listitem [ref=e873]:
+                        - link "Butter Croissant OUT OF STOCK $4.00" [ref=e874]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-butter-croissant_4241c3e7-b71d-47ea-b205-7e7accb27a8f
+                          - generic [ref=e875]:
+                            - heading "Butter Croissant" [level=3] [ref=e877]
+                            - generic [ref=e878]:
+                              - generic [ref=e880]: OUT OF STOCK
+                              - generic [ref=e881]: $4.00
+                      - listitem [ref=e882]:
+                        - link "Ham and Cheese Croissant OUT OF STOCK $5.50" [ref=e883]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-ham-and-cheese-croissant_5b17fac3-994a-426d-872e-ce4c1144211e
+                          - generic [ref=e884]:
+                            - heading "Ham and Cheese Croissant" [level=3] [ref=e886]
+                            - generic [ref=e887]:
+                              - generic [ref=e889]: OUT OF STOCK
+                              - generic [ref=e890]: $5.50
+                      - listitem [ref=e891]:
+                        - link "Almond Croissant $5.50" [ref=e892] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-almond-croissant_b9d172e2-4480-486f-b024-e68463986858
+                          - generic [ref=e893]:
+                            - heading "Almond Croissant" [level=3] [ref=e895]
+                            - generic [ref=e897]: $5.50
+                        - button [ref=e899] [cursor=pointer]:
+                          - img [ref=e901]
+                      - listitem [ref=e903]:
+                        - link "Chocolate Croissant $5.50" [ref=e904] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-chocolate-croissant_7958b174-8d68-49d7-8177-c5f29fbd1bab
+                          - generic [ref=e905]:
+                            - heading "Chocolate Croissant" [level=3] [ref=e907]
+                            - generic [ref=e909]: $5.50
+                        - button [ref=e911] [cursor=pointer]:
+                          - img [ref=e913]
+                      - listitem [ref=e915]:
+                        - link "Bacon Tomato Croissant OUT OF STOCK $5.50" [ref=e916]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-bacon-tomato-croissant_f6b4a34e-ea58-47bd-a62b-e1a9f98525ac
+                          - generic [ref=e917]:
+                            - heading "Bacon Tomato Croissant" [level=3] [ref=e919]
+                            - generic [ref=e920]:
+                              - generic [ref=e922]: OUT OF STOCK
+                              - generic [ref=e923]: $5.50
+                      - listitem [ref=e924]:
+                        - link "Raspberry Pistachio Croissant OUT OF STOCK $5.50" [ref=e925]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-raspberry-pistachio-croissant_f5bbe09b-bf2f-4fdb-960f-42641f526ad5
+                          - generic [ref=e926]:
+                            - heading "Raspberry Pistachio Croissant" [level=3] [ref=e928]
+                            - generic [ref=e929]:
+                              - generic [ref=e931]: OUT OF STOCK
+                              - generic [ref=e932]: $5.50
+                      - listitem [ref=e933]:
+                        - link "Spinach Mushroom Feta Croissant $5.50" [ref=e934] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-spinach-mushroom-feta-croissant_71844629-8836-4063-ad66-597b6d75b690
+                          - generic [ref=e935]:
+                            - heading "Spinach Mushroom Feta Croissant" [level=3] [ref=e937]
+                            - generic [ref=e939]: $5.50
+                        - button [ref=e941] [cursor=pointer]:
+                          - img [ref=e943]
+                      - listitem [ref=e945]:
+                        - link "Bacon Jalapeño Cream Cheese Croissant $5.50" [ref=e946] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-bacon-jalapeo-cream-cheese-croissant-_fe308ac3-fc53-434f-a073-b1083cc00ff2
+                          - generic [ref=e947]:
+                            - heading "Bacon Jalapeño Cream Cheese Croissant" [level=3] [ref=e949]
+                            - generic [ref=e951]: $5.50
+                        - button [ref=e953] [cursor=pointer]:
+                          - img [ref=e955]
+                  - separator [ref=e957]
+              - tabpanel "Toasts & Sandos" [ref=e958]:
+                - generic [ref=e959]:
+                  - heading "Toasts & Sandos" [level=2] [ref=e961]
+                  - tabpanel [ref=e964]:
+                    - list [ref=e965]:
+                      - listitem [ref=e966]:
+                        - link "The Tuna OUT OF STOCK $14.75" [ref=e967]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-the-tuna_32c5f20c-dc32-49d5-aabc-d6361f379d16
+                          - generic [ref=e968]:
+                            - heading "The Tuna" [level=3] [ref=e970]
+                            - generic [ref=e971]:
+                              - generic [ref=e973]: OUT OF STOCK
+                              - generic [ref=e974]: $14.75
+                      - listitem [ref=e975]:
+                        - link "The Turkey $14.25" [ref=e976] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-the-turkey_ff166854-7951-4550-a727-79643d9c58ac
+                          - generic [ref=e977]:
+                            - heading "The Turkey" [level=3] [ref=e979]
+                            - generic [ref=e981]: $14.25
+                        - button [ref=e983] [cursor=pointer]:
+                          - img [ref=e985]
+                      - listitem [ref=e987]:
+                        - link "The Roast Beef $15.75" [ref=e988] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-the-roast-beef_ab494cb2-42f6-4b65-9392-06db9c84c7f3
+                          - generic [ref=e989]:
+                            - heading "The Roast Beef" [level=3] [ref=e991]
+                            - generic [ref=e993]: $15.75
+                        - button [ref=e995] [cursor=pointer]:
+                          - img [ref=e997]
+                      - listitem [ref=e999]:
+                        - link "The Italian OUT OF STOCK $15.75" [ref=e1000]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-the-italian_9dba91dd-50fe-4557-9bd7-915a2e148847
+                          - generic [ref=e1001]:
+                            - heading "The Italian" [level=3] [ref=e1003]
+                            - generic [ref=e1004]:
+                              - generic [ref=e1006]: OUT OF STOCK
+                              - generic [ref=e1007]: $15.75
+                      - listitem [ref=e1008]:
+                        - link "House Cured Salmon Toast OUT OF STOCK $17.50" [ref=e1009]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-house-cured-salmon-toast_18b1a8b0-ba46-4fb6-8453-41f359741b94
+                          - generic [ref=e1010]:
+                            - heading "House Cured Salmon Toast" [level=3] [ref=e1012]
+                            - generic [ref=e1013]:
+                              - generic [ref=e1015]: OUT OF STOCK
+                              - generic [ref=e1016]: $17.50
+                      - listitem [ref=e1017]:
+                        - link "Avocado Toast $10.00" [ref=e1018] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-avocado-toast_e5442e88-bf60-4469-8290-465ff63ecbfc
+                          - generic [ref=e1019]:
+                            - heading "Avocado Toast" [level=3] [ref=e1021]
+                            - generic [ref=e1023]: $10.00
+                        - button [ref=e1025] [cursor=pointer]:
+                          - img [ref=e1027]
+                  - separator [ref=e1029]
+              - tabpanel "Kids" [ref=e1030]:
+                - generic [ref=e1031]:
+                  - heading "Kids" [level=2] [ref=e1033]
+                  - tabpanel [ref=e1036]:
+                    - heading "Kids Drinks" [level=3] [ref=e1038]
+                    - list [ref=e1039]:
+                      - listitem [ref=e1040]:
+                        - link "Strawberry Milk $3.50" [ref=e1041] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-strawberry-milk_56b951ce-5cef-4c30-a44a-c6e181a7cf8d
+                          - generic [ref=e1042]:
+                            - heading "Strawberry Milk" [level=3] [ref=e1044]
+                            - generic [ref=e1046]: $3.50
+                        - button [ref=e1048] [cursor=pointer]:
+                          - img [ref=e1050]
+                      - listitem [ref=e1052]:
+                        - link "Chocolate Milk $3.50" [ref=e1053] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-chocolate-milk_829dd85c-b679-42f7-9d05-7450c8c7c417
+                          - generic [ref=e1054]:
+                            - heading "Chocolate Milk" [level=3] [ref=e1056]
+                            - generic [ref=e1058]: $3.50
+                        - button [ref=e1060] [cursor=pointer]:
+                          - img [ref=e1062]
+                      - listitem [ref=e1064]:
+                        - link "Hot Chocolate $3.50" [ref=e1065] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-hot-chocolate_0eb390d3-806e-46fc-985b-d25515c9639b
+                          - generic [ref=e1066]:
+                            - heading "Hot Chocolate" [level=3] [ref=e1068]
+                            - generic [ref=e1070]: $3.50
+                        - button [ref=e1072] [cursor=pointer]:
+                          - img [ref=e1074]
+                      - listitem [ref=e1076]:
+                        - link "Babycino $3.50" [ref=e1077] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-babycino_9060cd0a-a6c3-4500-a1cb-49e45337c92d
+                          - generic [ref=e1078]:
+                            - heading "Babycino" [level=3] [ref=e1080]
+                            - generic [ref=e1082]: $3.50
+                        - button [ref=e1084] [cursor=pointer]:
+                          - img [ref=e1086]
+                      - listitem [ref=e1088]:
+                        - link "Banana Milk $3.50" [ref=e1089] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-banana-milk_71da53b0-b1a9-4c18-aa72-8fdddb11e13d
+                          - generic [ref=e1090]:
+                            - heading "Banana Milk" [level=3] [ref=e1092]
+                            - generic [ref=e1094]: $3.50
+                        - button [ref=e1096] [cursor=pointer]:
+                          - img [ref=e1098]
+                      - listitem [ref=e1100]:
+                        - link "Corn Milk $3.50" [ref=e1101] [cursor=pointer]:
+                          - /url: /online/brew-story-16889-beach-blvd/item-corn-milk_4276a903-cc5a-4c81-be69-765aed985652
+                          - generic [ref=e1102]:
+                            - heading "Corn Milk" [level=3] [ref=e1104]
+                            - generic [ref=e1106]: $3.50
+                        - button [ref=e1108] [cursor=pointer]:
+                          - img [ref=e1110]
+                  - separator [ref=e1112]
+              - tabpanel "Merch" [ref=e1113]:
+                - generic [ref=e1114]:
+                  - heading "Merch" [level=2] [ref=e1116]
+                  - generic [ref=e1117]:
+                    - tabpanel [ref=e1119]:
+                      - heading "Shirts" [level=3] [ref=e1121]
+                      - list [ref=e1122]:
+                        - listitem [ref=e1123]:
+                          - link "S Shirt OUT OF STOCK $35.00" [ref=e1124]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-s-shirt_becef0b6-b323-46d5-a95b-e7f78dd99d19
+                            - generic [ref=e1125]:
+                              - heading "S Shirt" [level=3] [ref=e1127]
+                              - generic [ref=e1128]:
+                                - generic [ref=e1130]: OUT OF STOCK
+                                - generic [ref=e1131]: $35.00
+                        - listitem [ref=e1132]:
+                          - link "M Shirt $35.00" [ref=e1133] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-m-shirt_58bbedf3-6306-46cf-be76-c4e3904a6fc3
+                            - generic [ref=e1134]:
+                              - heading "M Shirt" [level=3] [ref=e1136]
+                              - generic [ref=e1138]: $35.00
+                          - button [ref=e1140] [cursor=pointer]:
+                            - img [ref=e1142]
+                        - listitem [ref=e1144]:
+                          - link "L Shirt $35.00" [ref=e1145] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-l-shirt_c7514e96-322c-4b2c-904c-047ea42acba3
+                            - generic [ref=e1146]:
+                              - heading "L Shirt" [level=3] [ref=e1148]
+                              - generic [ref=e1150]: $35.00
+                          - button [ref=e1152] [cursor=pointer]:
+                            - img [ref=e1154]
+                        - listitem [ref=e1156]:
+                          - link "XL Shirt $35.00" [ref=e1157] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-xl-shirt_032c13b2-836c-4c12-9fc8-ed86f43192bb
+                            - generic [ref=e1158]:
+                              - heading "XL Shirt" [level=3] [ref=e1160]
+                              - generic [ref=e1162]: $35.00
+                          - button [ref=e1164] [cursor=pointer]:
+                            - img [ref=e1166]
+                        - listitem [ref=e1168]:
+                          - link "XXL Shirt $35.00" [ref=e1169] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-xxl-shirt_bd3901e4-223a-49c0-a8a1-e6f7aaa5a59c
+                            - generic [ref=e1170]:
+                              - heading "XXL Shirt" [level=3] [ref=e1172]
+                              - generic [ref=e1174]: $35.00
+                          - button [ref=e1176] [cursor=pointer]:
+                            - img [ref=e1178]
+                        - listitem [ref=e1180]:
+                          - link "XXXL Shirt $35.00" [ref=e1181] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-xxxl-shirt_e4e22b1b-cccf-41bb-815b-f0da136cef9e
+                            - generic [ref=e1182]:
+                              - heading "XXXL Shirt" [level=3] [ref=e1184]
+                              - generic [ref=e1186]: $35.00
+                          - button [ref=e1188] [cursor=pointer]:
+                            - img [ref=e1190]
+                    - tabpanel [ref=e1193]:
+                      - heading "Sweaters" [level=3] [ref=e1195]
+                      - list [ref=e1196]:
+                        - listitem [ref=e1197]:
+                          - link "M Sweater $60.00" [ref=e1198] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-m-sweater_270ed4c9-2b1e-4bb1-a95c-d2c2921ec1b2
+                            - generic [ref=e1199]:
+                              - heading "M Sweater" [level=3] [ref=e1201]
+                              - generic [ref=e1203]: $60.00
+                          - button [ref=e1205] [cursor=pointer]:
+                            - img [ref=e1207]
+                        - listitem [ref=e1209]:
+                          - link "L Sweater $60.00" [ref=e1210] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-l-sweater_201e03df-a514-402c-ba96-85048d87fdfe
+                            - generic [ref=e1211]:
+                              - heading "L Sweater" [level=3] [ref=e1213]
+                              - generic [ref=e1215]: $60.00
+                          - button [ref=e1217] [cursor=pointer]:
+                            - img [ref=e1219]
+                        - listitem [ref=e1221]:
+                          - link "XL Sweater $60.00" [ref=e1222] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-xl-sweater_b849a4dd-479e-49ff-8c61-e8b9ef144094
+                            - generic [ref=e1223]:
+                              - heading "XL Sweater" [level=3] [ref=e1225]
+                              - generic [ref=e1227]: $60.00
+                          - button [ref=e1229] [cursor=pointer]:
+                            - img [ref=e1231]
+                        - listitem [ref=e1233]:
+                          - link "XXL Sweater $60.00" [ref=e1234] [cursor=pointer]:
+                            - /url: /online/brew-story-16889-beach-blvd/item-xxl-sweater_3fbc998c-93d5-4a6e-a950-f0034f26158a
+                            - generic [ref=e1235]:
+                              - heading "XXL Sweater" [level=3] [ref=e1237]
+                              - generic [ref=e1239]: $60.00
+                          - button [ref=e1241] [cursor=pointer]:
+                            - img [ref=e1243]
+      - region [ref=e1245]:
+        - heading "Brew Story Location and Hours" [level=2] [ref=e1246]
+        - generic [ref=e1248]:
+          - link "(714) 400-4801" [ref=e1250] [cursor=pointer]:
+            - /url: tel:+17144004801
+          - link "16889 Beach Blvd, Huntington Beach, CA 92647" [ref=e1252] [cursor=pointer]:
+            - /url: https://google.com/maps/place?q=Brew+Story%2C+16889+Beach+Blvd%2C+Huntington+Beach%2C+CA+92647
+          - generic [ref=e1254]:
+            - generic [ref=e1258]:
+              - strong [ref=e1259]: Closed
+              - text: • Opens Monday at 10:30AM
+            - button "All hours" [ref=e1260] [cursor=pointer]:
+              - strong [ref=e1261]: All hours
+          - generic [ref=e1262]:
+            - link "View menu" [ref=e1264] [cursor=pointer]:
+              - /url: /menu/brew-story-16889-beach-blvd
+            - link "Order online" [ref=e1266] [cursor=pointer]:
+              - /url: /online/brew-story-16889-beach-blvd
+        - contentinfo [ref=e1267]:
+          - link "powered by toast (opens in a new tab)" [ref=e1269] [cursor=pointer]:
+            - /url: https://toasttab.com/local
+            - img [ref=e1270]
+            - img "powered by toast" [ref=e1271]
+          - list [ref=e1272]:
+            - listitem [ref=e1273]:
+              - link "Terms of Service" [ref=e1274] [cursor=pointer]:
+                - /url: https://pos.toasttab.com/terms-of-service/#diner-tos
+            - listitem [ref=e1275]:
+              - generic [ref=e1276]: "|"
+              - link "Privacy Statement" [ref=e1277] [cursor=pointer]:
+                - /url: https://pos.toasttab.com/privacy
+            - listitem [ref=e1278]:
+              - generic [ref=e1279]: "|"
+              - link "CA Privacy Statement" [ref=e1280] [cursor=pointer]:
+                - /url: https://pos.toasttab.com/privacy#addendum-a
+            - listitem [ref=e1281]:
+              - generic [ref=e1282]: "|"
+              - link "Cookie Settings" [ref=e1283] [cursor=pointer]:
+                - /url: "#"

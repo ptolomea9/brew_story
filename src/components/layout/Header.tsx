@@ -1,6 +1,7 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import MobileMenu from './MobileMenu';
@@ -15,10 +16,29 @@ const navLinks = [
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === '/';
+  const [heroReady, setHeroReady] = useState(!isHome);
+
+  useEffect(() => {
+    if (!isHome) return;
+    if (sessionStorage.getItem('brew-story-hero-seen')) {
+      setHeroReady(true);
+      return;
+    }
+    const handler = () => setHeroReady(true);
+    window.addEventListener('heroVideoEnded', handler);
+    return () => window.removeEventListener('heroVideoEnded', handler);
+  }, [isHome, heroReady]);
 
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-md border-b border-sage/30">
+      <motion.header
+        initial={isHome ? { y: -80, opacity: 0 } : false}
+        animate={heroReady ? { y: 0, opacity: 1 } : { y: -80, opacity: 0 }}
+        transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
+        className="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-md border-b border-sage/30"
+      >
         <nav className="mx-auto max-w-7xl px-6 flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
@@ -66,7 +86,7 @@ export default function Header() {
             </button>
           </div>
         </nav>
-      </header>
+      </motion.header>
 
       <AnimatePresence>
         {mobileOpen && <MobileMenu onClose={() => setMobileOpen(false)} />}

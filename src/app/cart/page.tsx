@@ -2,6 +2,7 @@
 
 import Container from '@/components/ui/Container';
 import Button from '@/components/ui/Button';
+import PageHero from '@/components/ui/PageHero';
 import { useCart } from '@/hooks/useCart';
 import { formatPrice } from '@/lib/utils';
 
@@ -29,9 +30,10 @@ export default function CartPage() {
   };
 
   return (
+    <>
+    <PageHero title="Cart" />
     <section className="py-16 md:py-24">
       <Container>
-        <h1 className="font-serif text-5xl md:text-7xl text-ink mb-12 text-center">Cart</h1>
 
         {items.length === 0 ? (
           <div className="text-center py-16">
@@ -89,5 +91,6 @@ export default function CartPage() {
         )}
       </Container>
     </section>
+    </>
   );
 }

@@ -2,6 +2,7 @@ import Container from '@/components/ui/Container';
 import ScrollReveal from '@/components/animation/ScrollReveal';
 import Button from '@/components/ui/Button';
 import Input from '@/components/ui/Input';
+import PageHero from '@/components/ui/PageHero';
 
 export const metadata = {
   title: 'Contact',
@@ -10,11 +11,12 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
+    <>
+    <PageHero title="Visit Us" />
     <section className="py-16 md:py-24">
       <Container>
         <ScrollReveal>
           <div className="text-center mb-16">
-            <h1 className="font-serif text-5xl md:text-7xl text-ink mb-4">Visit Us</h1>
             <p className="text-olive max-w-md mx-auto">
               Come write a chapter with us in Huntington Beach.
             </p>
@@ -33,8 +35,8 @@ export default function ContactPage() {
               <div>
                 <h2 className="text-xs tracking-widest uppercase text-olive mb-3">Hours</h2>
                 <div className="space-y-1 text-charcoal">
-                  <p>Monday - Friday: 7am - 5pm</p>
-                  <p>Saturday - Sunday: 8am - 5pm</p>
+                  <p>Monday - Friday: 8am - 7pm</p>
+                  <p>Saturday - Sunday: 8am - 4pm</p>
                 </div>
               </div>
 
@@ -83,5 +85,6 @@ export default function ContactPage() {
         </div>
       </Container>
     </section>
+    </>
   );
 }

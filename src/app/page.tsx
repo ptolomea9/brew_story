@@ -5,22 +5,26 @@ import ScrollReveal from '@/components/animation/ScrollReveal';
 import HeroTimeline from '@/components/animation/HeroTimeline';
 import TextReveal from '@/components/animation/TextReveal';
 import ParallaxLayer from '@/components/animation/ParallaxLayer';
-
+import HeroGate from '@/components/animation/HeroGate';
 const featuredProducts = [
-  { name: 'Single Origin', price: '$22.00', image: '/images/generated/atmosphere_pourover.png' },
-  { name: 'House Blend', price: '$18.00', image: '/images/generated/product_coffee_bags.png' },
-  { name: 'Seasonal Roast', price: '$20.00', image: '/images/generated/hero_beans_pour.png' },
+  { name: 'Tiramisu Latte', price: 7.50, image: '/images/menu/tiramisu-latte.jpg' },
+  { name: 'Creme Brulee Latte', price: 7.25, image: '/images/menu/creme-brulee-latte.jpg' },
+  { name: 'Banana Cream Latte', price: 6.75, image: '/images/menu/banana-cream-latte.jpg' },
 ];
 
 export default function Home() {
   return (
     <>
-      {/* Hero Section — Split layout: text left, hero image right */}
+      {/* Hero Section — Full immersive: video only, then site reveals */}
       <section className="bg-linen -mt-16 md:-mt-20">
-        <HeroTimeline heroImage="/images/generated/hero_latte.png" />
+        <HeroTimeline
+          videoSrc="/videos/hero-beans-to-latte.mp4"
+          heroImage="/images/generated/video_frame_start_integrated_4x.png"
+        />
       </section>
 
-      {/* Featured Section */}
+      {/* Featured Section — hidden until hero video ends */}
+      <HeroGate>
       <section className="py-24 md:py-32">
         <Container>
           <div className="text-center mb-16">
@@ -50,8 +54,8 @@ export default function Home() {
                   </div>
                   <div className="p-6">
                     <h3 className="font-serif text-2xl text-ink mb-2">{product.name}</h3>
-                    <p className="text-sm text-olive mb-4">From {product.price}</p>
-                    <Button href="/shop" variant="ghost" size="sm">View Details</Button>
+                    <p className="text-sm text-olive mb-4">From ${product.price.toFixed(2)}</p>
+                    <Button href="/menu" variant="ghost" size="sm">View Menu</Button>
                   </div>
                 </div>
               </ScrollReveal>
@@ -105,6 +109,7 @@ export default function Home() {
           </ScrollReveal>
         </Container>
       </section>
+      </HeroGate>
     </>
   );
 }
