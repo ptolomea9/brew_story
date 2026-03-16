@@ -41,6 +41,14 @@ for (const [slug, data] of Object.entries(menuImages)) {
   imageMap.set(slug, (data as { image: string }).image);
 }
 
+// Explicit overrides for items whose names don't match image slugs
+const slugOverrides: Record<string, string> = {
+  'banana-cream-coffee-latte': 'banana-cream-latte',
+  'banana-cream-latte': 'banana-cream-latte',
+  'bacon-jalapeno-cream-cheese-croissant': 'bacon-jalapeo-cream-cheese-croissant',
+  'bacon-jalape-o-cream-cheese-croissant': 'bacon-jalapeo-cream-cheese-croissant',
+};
+
 function slugify(name: string) {
   return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 }
@@ -52,7 +60,21 @@ function getItemImage(item: MenuItem): string | null {
   }
   // Fall back to local generated images
   const slug = slugify(item.name);
-  return imageMap.get(slug) || null;
+
+  // Check explicit overrides first
+  const override = slugOverrides[slug];
+  if (override && imageMap.has(override)) return imageMap.get(override)!;
+
+  if (imageMap.has(slug)) return imageMap.get(slug)!;
+
+  // Try shorter slugs by trimming words from the end (handles names with descriptions)
+  const parts = slug.split('-');
+  for (let len = parts.length - 1; len >= 2; len--) {
+    const shorter = parts.slice(0, len).join('-');
+    if (imageMap.has(shorter)) return imageMap.get(shorter)!;
+  }
+
+  return null;
 }
 
 export default function MenuContent({ items }: { items: MenuItem[] }) {
@@ -68,7 +90,9 @@ export default function MenuContent({ items }: { items: MenuItem[] }) {
   // Filter items (exclude merchandise — that's in Shop)
   const filtered = useMemo(() => {
     let result = items.filter((i) => i.category !== 'merchandise');
-    if (activeCategory !== 'all') {
+    if (activeCategory === 'popular') {
+      result = result.filter((i) => i.featured || i.dietary?.includes('popular'));
+    } else if (activeCategory !== 'all') {
       result = result.filter((i) => i.category === activeCategory);
     }
     if (search.trim()) {
@@ -135,6 +159,16 @@ export default function MenuContent({ items }: { items: MenuItem[] }) {
                 }`}
               >
                 All
+              </button>
+              <button
+                onClick={() => setActiveCategory('popular')}
+                className={`px-4 py-2 text-sm tracking-wide uppercase transition-all duration-200 ${
+                  activeCategory === 'popular'
+                    ? 'bg-olive text-cream'
+                    : 'bg-linen text-olive border border-sage/30 hover:bg-sage/20'
+                }`}
+              >
+                Popular
               </button>
               {categories.map((cat) => (
                 <button

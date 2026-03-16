@@ -7,6 +7,7 @@ const navLinks = [
   { href: '/menu', label: 'Menu' },
   { href: '/shop', label: 'Shop' },
   { href: '/order', label: 'Order' },
+  { href: '/catering', label: 'Events' },
   { href: '/about', label: 'About' },
   { href: '/contact', label: 'Contact' },
 ];

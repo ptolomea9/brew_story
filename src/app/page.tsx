@@ -16,9 +16,9 @@ export default function Home() {
   return (
     <>
       {/* Hero Section — Full immersive: video only, then site reveals */}
-      <section className="bg-linen -mt-16 md:-mt-20">
+      <section className="bg-[#EDEEE6] -mt-16 md:-mt-20">
         <HeroTimeline
-          videoSrc="/videos/hero-beans-to-latte.mp4"
+          videoSrc="/videos/Brew_Story_Final_Cropped.mp4"
           heroImage="/images/generated/video_frame_start_integrated_4x.png"
         />
       </section>

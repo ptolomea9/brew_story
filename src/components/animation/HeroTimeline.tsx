@@ -64,12 +64,12 @@ export default function HeroTimeline({ videoSrc, heroImage, className = '' }: He
   } as const;
 
   return (
-    <div ref={containerRef} className={`relative ${videoEnded ? 'min-h-screen md:h-[90vh]' : 'h-screen'} overflow-hidden transition-all duration-1000 ${className}`}>
+    <div ref={containerRef} className={`relative ${videoEnded ? 'bg-[#EEF0E4] min-h-screen md:h-[90vh]' : 'bg-[#EEF0E4] h-screen'} overflow-hidden transition-all duration-1000 ${className}`}>
 
       {/* ── VIDEO LAYER ── */}
       {/* Mobile: flows in document after text. Desktop: absolute positioned, slides right */}
       <motion.div
-        className={`bg-linen ${videoEnded ? 'md:absolute md:inset-0' : 'absolute inset-0'}`}
+        className={`${videoEnded ? 'bg-[#EEF0E4]' : ''} ${videoEnded ? 'md:absolute md:inset-0' : 'absolute inset-0'}`}
         initial={{ x: 0 }}
         animate={videoEnded ? { x: typeof window !== 'undefined' && window.innerWidth >= 768 ? '25%' : 0 } : { x: 0 }}
         transition={{ duration: 1.4, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -79,7 +79,7 @@ export default function HeroTimeline({ videoSrc, heroImage, className = '' }: He
           className="absolute inset-0 z-10 pointer-events-none transition-opacity duration-1000 hidden md:block"
           style={{
             opacity: videoEnded ? 1 : 0,
-            background: 'linear-gradient(to right, var(--linen) 0%, transparent 30%)',
+            background: 'linear-gradient(to right, #EEF0E4 0%, #EEF0E4 10%, transparent 50%)',
           }}
         />
 
@@ -87,7 +87,8 @@ export default function HeroTimeline({ videoSrc, heroImage, className = '' }: He
           <video
             ref={videoRef}
             src={videoSrc}
-            className={`w-full object-contain ${videoEnded ? 'h-[50vh] md:h-full' : 'h-full'}`}
+            className={`w-full h-full ${videoEnded ? 'object-contain' : 'object-cover'}`}
+            style={videoEnded ? { objectPosition: 'center 60%' } : undefined}
             autoPlay
             muted
             playsInline
@@ -99,7 +100,8 @@ export default function HeroTimeline({ videoSrc, heroImage, className = '' }: He
           <img
             src={heroImage}
             alt="Brew Story — craft roasted coffee"
-            className={`w-full object-contain ${videoEnded ? 'h-[50vh] md:h-full' : 'h-full'}`}
+            className="w-full h-full object-contain"
+            style={videoEnded ? { objectPosition: 'center 60%' } : undefined}
           />
         ) : (
           <div className="w-full h-full bg-linen" />
