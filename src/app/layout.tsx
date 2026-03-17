@@ -17,6 +17,10 @@ export const metadata: Metadata = {
     locale: 'en_US',
     siteName: 'Brew Story',
   },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function RootLayout({
