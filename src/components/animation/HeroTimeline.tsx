@@ -22,9 +22,12 @@ export default function HeroTimeline({ videoSrc, heroImage, className = '' }: He
   const videoRef = useRef<HTMLVideoElement>(null);
   const [animationReady, setAnimationReady] = useState(false);
   const [skipAnimation, setSkipAnimation] = useState(false);
+  const [slideX, setSlideX] = useState<string | number>(0);
 
-  // On mount: trigger entrance animations (or skip on return visits)
+  // On mount: resolve desktop breakpoint and trigger entrance animations
   useEffect(() => {
+    setSlideX(window.innerWidth >= 768 ? '25%' : 0);
+
     const seen = sessionStorage.getItem('brew-story-hero-seen');
     if (seen) {
       setSkipAnimation(true);
@@ -67,9 +70,6 @@ export default function HeroTimeline({ videoSrc, heroImage, className = '' }: He
       transition: { staggerChildren: 0.15, delayChildren: 0.1 },
     },
   } as const;
-
-  // Desktop slide target
-  const slideX = typeof window !== 'undefined' && window.innerWidth >= 768 ? '25%' : 0;
 
   return (
     <div ref={containerRef} className={`relative bg-[#EEF0E4] min-h-screen md:h-[90vh] overflow-hidden ${className}`}>

@@ -7,6 +7,7 @@ import Button from '@/components/ui/Button';
 import ScrollReveal from '@/components/animation/ScrollReveal';
 import TextReveal from '@/components/animation/TextReveal';
 import ParallaxLayer from '@/components/animation/ParallaxLayer';
+import useFormSubmit from '@/hooks/useFormSubmit';
 
 const services = [
   {
@@ -44,8 +45,6 @@ const steps = [
 const eventTypes = ['Corporate Event', 'Private Event', 'Pop-Up / Market', 'Wedding', 'Other'];
 const guestRanges = ['Under 25', '25-50', '50-100', '100-200', '200+'];
 
-const FORM_URL = 'https://formsubmit.co/ajax/brewstoryhb@gmail.com';
-
 export default function CateringPage() {
   const [formData, setFormData] = useState({
     name: '',
@@ -56,29 +55,7 @@ export default function CateringPage() {
     date: '',
     message: '',
   });
-  const [submitted, setSubmitted] = useState(false);
-  const [sending, setSending] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setSending(true);
-    try {
-      await fetch(FORM_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({
-          ...formData,
-          _subject: 'Brew Story — Event Inquiry',
-          _template: 'table',
-        }),
-      });
-      setSubmitted(true);
-    } catch {
-      alert('Something went wrong. Please try again or email us directly.');
-    } finally {
-      setSending(false);
-    }
-  };
+  const { sending, submitted, handleSubmit } = useFormSubmit('Brew Story — Event Inquiry');
 
   return (
     <>
@@ -263,7 +240,7 @@ export default function CateringPage() {
               </ScrollReveal>
             ) : (
               <ScrollReveal>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form onSubmit={(e) => handleSubmit(e, formData)} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-xs tracking-widest uppercase text-olive mb-2">
