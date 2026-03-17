@@ -1,15 +1,40 @@
+'use client';
+
+import { useState } from 'react';
 import Container from '@/components/ui/Container';
 import ScrollReveal from '@/components/animation/ScrollReveal';
 import Button from '@/components/ui/Button';
 import Input from '@/components/ui/Input';
 import PageHero from '@/components/ui/PageHero';
 
-export const metadata = {
-  title: 'Contact',
-  description: 'Visit Brew Story in Huntington Beach, CA. Find our hours, location, and get in touch.',
-};
+const FORM_URL = 'https://formsubmit.co/ajax/brewstoryhb@gmail.com';
 
 export default function ContactPage() {
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
+  const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setSending(true);
+    try {
+      await fetch(FORM_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          ...formData,
+          _subject: 'Brew Story — Contact Form',
+          _template: 'table',
+        }),
+      });
+      setSubmitted(true);
+    } catch {
+      alert('Something went wrong. Please try again or email us directly.');
+    } finally {
+      setSending(false);
+    }
+  };
+
   return (
     <>
     <PageHero title="Visit Us" />
@@ -43,7 +68,7 @@ export default function ContactPage() {
               <div>
                 <h2 className="text-xs tracking-widest uppercase text-olive mb-3">Contact</h2>
                 <div className="space-y-1 text-charcoal">
-                  <p>hello@brewstory.com</p>
+                  <p>brewstoryhb@gmail.com</p>
                 </div>
               </div>
 
@@ -63,23 +88,49 @@ export default function ContactPage() {
           <ScrollReveal direction="right">
             <div>
               <h2 className="font-serif text-2xl text-ink mb-8">Get in Touch</h2>
-              <form className="space-y-6">
-                <Input id="name" label="Name" placeholder="Your name" required />
-                <Input id="email" label="Email" type="email" placeholder="your@email.com" required />
-                <div>
-                  <label htmlFor="message" className="block text-xs tracking-widest uppercase text-olive mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    placeholder="How can we help?"
-                    required
-                    className="w-full px-4 py-3 bg-transparent border border-sage text-charcoal placeholder:text-sage focus:border-olive focus:outline-none transition-colors resize-none"
-                  />
+              {submitted ? (
+                <div className="text-center py-16 bg-linen">
+                  <h3 className="font-serif text-3xl text-ink mb-4">Thank you!</h3>
+                  <p className="text-olive">We'll get back to you soon.</p>
                 </div>
-                <Button type="submit" size="lg" className="w-full">Send Message</Button>
-              </form>
+              ) : (
+                <form onSubmit={handleSubmit} className="space-y-6">
+                  <Input
+                    id="name"
+                    label="Name"
+                    placeholder="Your name"
+                    required
+                    value={formData.name}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, name: e.target.value })}
+                  />
+                  <Input
+                    id="email"
+                    label="Email"
+                    type="email"
+                    placeholder="your@email.com"
+                    required
+                    value={formData.email}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => setFormData({ ...formData, email: e.target.value })}
+                  />
+                  <div>
+                    <label htmlFor="message" className="block text-xs tracking-widest uppercase text-olive mb-2">
+                      Message
+                    </label>
+                    <textarea
+                      id="message"
+                      rows={5}
+                      placeholder="How can we help?"
+                      required
+                      value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      className="w-full px-4 py-3 bg-transparent border border-sage text-charcoal placeholder:text-sage focus:border-olive focus:outline-none transition-colors resize-none"
+                    />
+                  </div>
+                  <Button type="submit" size="lg" className="w-full" disabled={sending}>
+                    {sending ? 'Sending...' : 'Send Message'}
+                  </Button>
+                </form>
+              )}
             </div>
           </ScrollReveal>
         </div>

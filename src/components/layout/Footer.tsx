@@ -4,7 +4,7 @@ const footerLinks = {
   visit: [
     { href: '/menu', label: 'Menu' },
     { href: '/order', label: 'Order Online' },
-    { href: '/catering', label: 'Events' },
+    { href: '/events', label: 'Events' },
     { href: '/about', label: 'Our Story' },
     { href: '/contact', label: 'Contact' },
   ],

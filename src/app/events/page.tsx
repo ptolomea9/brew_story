@@ -44,6 +44,8 @@ const steps = [
 const eventTypes = ['Corporate Event', 'Private Event', 'Pop-Up / Market', 'Wedding', 'Other'];
 const guestRanges = ['Under 25', '25-50', '50-100', '100-200', '200+'];
 
+const FORM_URL = 'https://formsubmit.co/ajax/brewstoryhb@gmail.com';
+
 export default function CateringPage() {
   const [formData, setFormData] = useState({
     name: '',
@@ -55,11 +57,27 @@ export default function CateringPage() {
     message: '',
   });
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: wire to email service or Sanity
-    setSubmitted(true);
+    setSending(true);
+    try {
+      await fetch(FORM_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          ...formData,
+          _subject: 'Brew Story — Event Inquiry',
+          _template: 'table',
+        }),
+      });
+      setSubmitted(true);
+    } catch {
+      alert('Something went wrong. Please try again or email us directly.');
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -348,8 +366,8 @@ export default function CateringPage() {
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full">
-                    Request a Quote
+                  <Button type="submit" size="lg" className="w-full" disabled={sending}>
+                    {sending ? 'Sending...' : 'Request a Quote'}
                   </Button>
                 </form>
               </ScrollReveal>
